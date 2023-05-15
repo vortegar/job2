@@ -1,0 +1,48 @@
+.add-provider-register {
+  border-radius: solid 1px black;
+  border-radius: 50%;
+  margin-right: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  background: #52c41a;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.button-list {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 12px;
+}
+
+.paper-form {
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.button-check {
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.button-delete {
+  height: 40px;
+  margin-top: 20px;
+}
+
+.divider {
+  width: 100%;
+  margin-top: 16px;
+  border-color: #b5b5b5;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: flex-end;
+  color: #6880ff;
+}

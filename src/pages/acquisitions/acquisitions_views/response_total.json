@@ -1,0 +1,2036 @@
+let total = [{
+  "id": 117,
+  "material_group_material": [
+      {
+          "material_family": "FAMILIA LUMINARIAS",
+          "family_materials": [
+              {
+                  "material_id": 2589,
+                  "material_code": "QA90009",
+                  "material_name": "MONTAJE DE FOCOS JKOLFF",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "1",
+                          "material_qty": 20,
+                          "total_h": 10382
+                      },
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "1",
+                          "material_qty": 30,
+                          "total_h": 10382
+                      },
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "1",
+                          "material_qty": 963,
+                          "total_h": 10382
+                      },
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "5",
+                          "material_qty": 123,
+                          "total_h": 10382
+                      },
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "5",
+                          "material_qty": 4123,
+                          "total_h": 10382
+                      },
+                      {
+                          "material_id": 2589,
+                          "material_name": "MONTAJE DE FOCOS JKOLFF",
+                          "material_code": "QA90009",
+                          "material_level": "5",
+                          "material_qty": 5123,
+                          "total_h": 10382
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2590,
+                  "material_code": "QA90010",
+                  "material_name": "PORTALAMPARA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "3",
+                          "material_qty": 246,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "4",
+                          "material_qty": 23,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "4",
+                          "material_qty": 43,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "6",
+                          "material_qty": 0,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "6",
+                          "material_qty": 2,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "6",
+                          "material_qty": 23,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "6",
+                          "material_qty": 43,
+                          "total_h": 923
+                      },
+                      {
+                          "material_id": 2590,
+                          "material_name": "PORTALAMPARA",
+                          "material_code": "QA90010",
+                          "material_level": "6",
+                          "material_qty": 543,
+                          "total_h": 923
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2592,
+                  "material_code": "QA90013",
+                  "material_name": "AMPOLLETA HALOGENA 150W",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2592,
+                          "material_name": "AMPOLLETA HALOGENA 150W",
+                          "material_code": "QA90013",
+                          "material_level": "1",
+                          "material_qty": 4123,
+                          "total_h": 7879963
+                      },
+                      {
+                          "material_id": 2592,
+                          "material_name": "AMPOLLETA HALOGENA 150W",
+                          "material_code": "QA90013",
+                          "material_level": "1",
+                          "material_qty": 87128,
+                          "total_h": 7879963
+                      },
+                      {
+                          "material_id": 2592,
+                          "material_name": "AMPOLLETA HALOGENA 150W",
+                          "material_code": "QA90013",
+                          "material_level": "1",
+                          "material_qty": 7788712,
+                          "total_h": 7879963
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2593,
+                  "material_code": "QA90014",
+                  "material_name": "AMPOLLETA HALOGENA 300W",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "111122222",
+                          "material_qty": 11,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "111122222",
+                          "material_qty": 41,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "111122222",
+                          "material_qty": 4123,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "111122222",
+                          "material_qty": 11111,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "3",
+                          "material_qty": 123,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "3",
+                          "material_qty": 4123,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "7",
+                          "material_qty": 2,
+                          "total_h": 19539
+                      },
+                      {
+                          "material_id": 2593,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "QA90014",
+                          "material_level": "7",
+                          "material_qty": 5,
+                          "total_h": 19539
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2594,
+                  "material_code": "QA90015",
+                  "material_name": "AMPOLLETA HALOGENA 500W",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2594,
+                          "material_name": "AMPOLLETA HALOGENA 500W",
+                          "material_code": "QA90015",
+                          "material_level": "3",
+                          "material_qty": 1123,
+                          "total_h": 22535
+                      },
+                      {
+                          "material_id": 2594,
+                          "material_name": "AMPOLLETA HALOGENA 500W",
+                          "material_code": "QA90015",
+                          "material_level": "3",
+                          "material_qty": 21412,
+                          "total_h": 22535
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2595,
+                  "material_code": "QA90016",
+                  "material_name": "BASE RECTA PLASTICA E27",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2595,
+                          "material_name": "BASE RECTA PLASTICA E27",
+                          "material_code": "QA90016",
+                          "material_level": "5",
+                          "material_qty": 121,
+                          "total_h": 845
+                      },
+                      {
+                          "material_id": 2595,
+                          "material_name": "BASE RECTA PLASTICA E27",
+                          "material_code": "QA90016",
+                          "material_level": "5",
+                          "material_qty": 312,
+                          "total_h": 845
+                      },
+                      {
+                          "material_id": 2595,
+                          "material_name": "BASE RECTA PLASTICA E27",
+                          "material_code": "QA90016",
+                          "material_level": "5",
+                          "material_qty": 412,
+                          "total_h": 845
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2596,
+                  "material_code": "QA90017",
+                  "material_name": "BASE RECTA LOZA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2596,
+                          "material_name": "BASE RECTA LOZA",
+                          "material_code": "QA90017",
+                          "material_level": "1",
+                          "material_qty": 963,
+                          "total_h": 968
+                      },
+                      {
+                          "material_id": 2596,
+                          "material_name": "BASE RECTA LOZA",
+                          "material_code": "QA90017",
+                          "material_level": "7",
+                          "material_qty": 2,
+                          "total_h": 968
+                      },
+                      {
+                          "material_id": 2596,
+                          "material_name": "BASE RECTA LOZA",
+                          "material_code": "QA90017",
+                          "material_level": "7",
+                          "material_qty": 3,
+                          "total_h": 968
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2597,
+                  "material_code": "QA90018",
+                  "material_name": "SOPORTE P/LUMINARIA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "4",
+                          "material_qty": 864,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "4",
+                          "material_qty": 435,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "4",
+                          "material_qty": 875,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "6",
+                          "material_qty": 345,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "6",
+                          "material_qty": 864,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "6",
+                          "material_qty": 435,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "6",
+                          "material_qty": 875,
+                          "total_h": 5569
+                      },
+                      {
+                          "material_id": 2597,
+                          "material_name": "SOPORTE P/LUMINARIA",
+                          "material_code": "QA90018",
+                          "material_level": "6",
+                          "material_qty": 876,
+                          "total_h": 5569
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2598,
+                  "material_code": "QA90019",
+                  "material_name": "SOLDADURA PTO AZUL 1/8",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2598,
+                          "material_name": "SOLDADURA PTO AZUL 1/8",
+                          "material_code": "QA90019",
+                          "material_level": "3",
+                          "material_qty": 615,
+                          "total_h": 615
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA ARTEFACTOS",
+          "family_materials": [
+              {
+                  "material_id": 990,
+                  "material_code": "CJ90064",
+                  "material_name": "FALSO POLO 1P MOSAIC 77070",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 990,
+                          "material_name": "FALSO POLO 1P MOSAIC 77070",
+                          "material_code": "CJ90064",
+                          "material_level": "3",
+                          "material_qty": 412,
+                          "total_h": 4535
+                      },
+                      {
+                          "material_id": 990,
+                          "material_name": "FALSO POLO 1P MOSAIC 77070",
+                          "material_code": "CJ90064",
+                          "material_level": "3",
+                          "material_qty": 4123,
+                          "total_h": 4535
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA GASTOS GENERALES",
+          "family_materials": [
+              {
+                  "material_id": 3210,
+                  "material_code": "VC90030",
+                  "material_name": "CARTRIDGE HP C4913A AMARILLO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3210,
+                          "material_name": "CARTRIDGE HP C4913A AMARILLO",
+                          "material_code": "VC90030",
+                          "material_level": "4",
+                          "material_qty": 8246,
+                          "total_h": 53591
+                      },
+                      {
+                          "material_id": 3210,
+                          "material_name": "CARTRIDGE HP C4913A AMARILLO",
+                          "material_code": "VC90030",
+                          "material_level": "4",
+                          "material_qty": 45345,
+                          "total_h": 53591
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA MALLA A TIERRA",
+          "family_materials": [
+              {
+                  "material_id": 2557,
+                  "material_code": "OA90039",
+                  "material_name": "MOLDE xBM-2Q2Q (4/0-4/0-250)",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2557,
+                          "material_name": "MOLDE xBM-2Q2Q (4/0-4/0-250)",
+                          "material_code": "OA90039",
+                          "material_level": "5",
+                          "material_qty": 369,
+                          "total_h": 1213
+                      },
+                      {
+                          "material_id": 2557,
+                          "material_name": "MOLDE xBM-2Q2Q (4/0-4/0-250)",
+                          "material_code": "OA90039",
+                          "material_level": "5",
+                          "material_qty": 412,
+                          "total_h": 1213
+                      },
+                      {
+                          "material_id": 2557,
+                          "material_name": "MOLDE xBM-2Q2Q (4/0-4/0-250)",
+                          "material_code": "OA90039",
+                          "material_level": "5",
+                          "material_qty": 432,
+                          "total_h": 1213
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2559,
+                  "material_code": "OA90041",
+                  "material_name": "MOLDE GYP-16006M (5/8-2-65)",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2559,
+                          "material_name": "MOLDE GYP-16006M (5/8-2-65)",
+                          "material_code": "OA90041",
+                          "material_level": "2",
+                          "material_qty": 3123,
+                          "total_h": 126255
+                      },
+                      {
+                          "material_id": 2559,
+                          "material_name": "MOLDE GYP-16006M (5/8-2-65)",
+                          "material_code": "OA90041",
+                          "material_level": "2",
+                          "material_qty": 123123,
+                          "total_h": 126255
+                      },
+                      {
+                          "material_id": 2559,
+                          "material_name": "MOLDE GYP-16006M (5/8-2-65)",
+                          "material_code": "OA90041",
+                          "material_level": "8",
+                          "material_qty": 6,
+                          "total_h": 126255
+                      },
+                      {
+                          "material_id": 2559,
+                          "material_name": "MOLDE GYP-16006M (5/8-2-65)",
+                          "material_code": "OA90041",
+                          "material_level": "8",
+                          "material_qty": 3,
+                          "total_h": 126255
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2560,
+                  "material_code": "OA90042",
+                  "material_name": "MOLDE PTC-2V2V (250-250-250)",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2560,
+                          "material_name": "MOLDE PTC-2V2V (250-250-250)",
+                          "material_code": "OA90042",
+                          "material_level": "2",
+                          "material_qty": 2,
+                          "total_h": 6
+                      },
+                      {
+                          "material_id": 2560,
+                          "material_name": "MOLDE PTC-2V2V (250-250-250)",
+                          "material_code": "OA90042",
+                          "material_level": "2",
+                          "material_qty": 4,
+                          "total_h": 6
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2563,
+                  "material_code": "OA90045",
+                  "material_name": "BARRA T/TIERRA CADWELD 3/4x1.5 BEAPT03  ",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2563,
+                          "material_name": "BARRA T/TIERRA CADWELD 3/4x1.5 BEAPT03  ",
+                          "material_code": "OA90045",
+                          "material_level": "11111111",
+                          "material_qty": 333,
+                          "total_h": 3681
+                      },
+                      {
+                          "material_id": 2563,
+                          "material_name": "BARRA T/TIERRA CADWELD 3/4x1.5 BEAPT03  ",
+                          "material_code": "OA90045",
+                          "material_level": "11111111",
+                          "material_qty": 3333,
+                          "total_h": 3681
+                      },
+                      {
+                          "material_id": 2563,
+                          "material_name": "BARRA T/TIERRA CADWELD 3/4x1.5 BEAPT03  ",
+                          "material_code": "OA90045",
+                          "material_level": "2",
+                          "material_qty": 7,
+                          "total_h": 3681
+                      },
+                      {
+                          "material_id": 2563,
+                          "material_name": "BARRA T/TIERRA CADWELD 3/4x1.5 BEAPT03  ",
+                          "material_code": "OA90045",
+                          "material_level": "2",
+                          "material_qty": 8,
+                          "total_h": 3681
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA TRAMITES Y ENSAYOS",
+          "family_materials": [
+              {
+                  "material_id": 3055,
+                  "material_code": "UA90004",
+                  "material_name": "INSTALACION ELECTRICA ANEXOS TE-1",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3055,
+                          "material_name": "INSTALACION ELECTRICA ANEXOS TE-1",
+                          "material_code": "UA90004",
+                          "material_level": "2",
+                          "material_qty": 615,
+                          "total_h": 1539
+                      },
+                      {
+                          "material_id": 3055,
+                          "material_name": "INSTALACION ELECTRICA ANEXOS TE-1",
+                          "material_code": "UA90004",
+                          "material_level": "2",
+                          "material_qty": 412,
+                          "total_h": 1539
+                      },
+                      {
+                          "material_id": 3055,
+                          "material_name": "INSTALACION ELECTRICA ANEXOS TE-1",
+                          "material_code": "UA90004",
+                          "material_level": "2",
+                          "material_qty": 512,
+                          "total_h": 1539
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3056,
+                  "material_code": "UA90005",
+                  "material_name": "GESTION APROBACION DE INSTALACIONES",
+                  "material_measure_unit": "gl",
+                  "material_levels": [
+                      {
+                          "material_id": 3056,
+                          "material_name": "GESTION APROBACION DE INSTALACIONES",
+                          "material_code": "UA90005",
+                          "material_level": "1",
+                          "material_qty": 15,
+                          "total_h": 38
+                      },
+                      {
+                          "material_id": 3056,
+                          "material_name": "GESTION APROBACION DE INSTALACIONES",
+                          "material_code": "UA90005",
+                          "material_level": "131",
+                          "material_qty": 1,
+                          "total_h": 38
+                      },
+                      {
+                          "material_id": 3056,
+                          "material_name": "GESTION APROBACION DE INSTALACIONES",
+                          "material_code": "UA90005",
+                          "material_level": "131",
+                          "material_qty": 2,
+                          "total_h": 38
+                      },
+                      {
+                          "material_id": 3056,
+                          "material_name": "GESTION APROBACION DE INSTALACIONES",
+                          "material_code": "UA90005",
+                          "material_level": "2",
+                          "material_qty": 5,
+                          "total_h": 38
+                      },
+                      {
+                          "material_id": 3056,
+                          "material_name": "GESTION APROBACION DE INSTALACIONES",
+                          "material_code": "UA90005",
+                          "material_level": "4",
+                          "material_qty": 15,
+                          "total_h": 38
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3057,
+                  "material_code": "UA90006",
+                  "material_name": "TRAMITACION CHILECTRA",
+                  "material_measure_unit": "gl",
+                  "material_levels": [
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "1",
+                          "material_qty": 8246,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "2",
+                          "material_qty": 615,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "4",
+                          "material_qty": 11111,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "4",
+                          "material_qty": 111111,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "6",
+                          "material_qty": 432,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "6",
+                          "material_qty": 11111,
+                          "total_h": 253737
+                      },
+                      {
+                          "material_id": 3057,
+                          "material_name": "TRAMITACION CHILECTRA",
+                          "material_code": "UA90006",
+                          "material_level": "6",
+                          "material_qty": 111111,
+                          "total_h": 253737
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA EQUIPOS Y HERRAMIENTAS",
+          "family_materials": [
+              {
+                  "material_id": 3157,
+                  "material_code": "VB90065",
+                  "material_name": "APRETA TERMINAL 0,5-10mm2",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3157,
+                          "material_name": "APRETA TERMINAL 0,5-10mm2",
+                          "material_code": "VB90065",
+                          "material_level": "1",
+                          "material_qty": 10,
+                          "total_h": 20
+                      },
+                      {
+                          "material_id": 3157,
+                          "material_name": "APRETA TERMINAL 0,5-10mm2",
+                          "material_code": "VB90065",
+                          "material_level": "4",
+                          "material_qty": 10,
+                          "total_h": 20
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3159,
+                  "material_code": "VB90067",
+                  "material_name": "ATORNILLADOR INALAMBRICO 3/4 3,6V",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3159,
+                          "material_name": "ATORNILLADOR INALAMBRICO 3/4 3,6V",
+                          "material_code": "VB90067",
+                          "material_level": "2",
+                          "material_qty": 246,
+                          "total_h": 246
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3161,
+                  "material_code": "VB90069",
+                  "material_name": "LIMA REDONDA 20 CMS",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3161,
+                          "material_name": "LIMA REDONDA 20 CMS",
+                          "material_code": "VB90069",
+                          "material_level": "1",
+                          "material_qty": 10,
+                          "total_h": 93
+                      },
+                      {
+                          "material_id": 3161,
+                          "material_name": "LIMA REDONDA 20 CMS",
+                          "material_code": "VB90069",
+                          "material_level": "4",
+                          "material_qty": 10,
+                          "total_h": 93
+                      },
+                      {
+                          "material_id": 3161,
+                          "material_name": "LIMA REDONDA 20 CMS",
+                          "material_code": "VB90069",
+                          "material_level": "7",
+                          "material_qty": 6,
+                          "total_h": 93
+                      },
+                      {
+                          "material_id": 3161,
+                          "material_name": "LIMA REDONDA 20 CMS",
+                          "material_code": "VB90069",
+                          "material_level": "7",
+                          "material_qty": 33,
+                          "total_h": 93
+                      },
+                      {
+                          "material_id": 3161,
+                          "material_name": "LIMA REDONDA 20 CMS",
+                          "material_code": "VB90069",
+                          "material_level": "7",
+                          "material_qty": 34,
+                          "total_h": 93
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3162,
+                  "material_code": "VB90070",
+                  "material_name": "MANGO PARA LIMAS",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3162,
+                          "material_name": "MANGO PARA LIMAS",
+                          "material_code": "VB90070",
+                          "material_level": "4",
+                          "material_qty": 1423,
+                          "total_h": 9678
+                      },
+                      {
+                          "material_id": 3162,
+                          "material_name": "MANGO PARA LIMAS",
+                          "material_code": "VB90070",
+                          "material_level": "4",
+                          "material_qty": 4123,
+                          "total_h": 9678
+                      },
+                      {
+                          "material_id": 3162,
+                          "material_name": "MANGO PARA LIMAS",
+                          "material_code": "VB90070",
+                          "material_level": "4",
+                          "material_qty": 4128,
+                          "total_h": 9678
+                      },
+                      {
+                          "material_id": 3162,
+                          "material_name": "MANGO PARA LIMAS",
+                          "material_code": "VB90070",
+                          "material_level": "7",
+                          "material_qty": 4,
+                          "total_h": 9678
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3165,
+                  "material_code": "VB90073",
+                  "material_name": "ALICATE DE PUNTA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3165,
+                          "material_name": "ALICATE DE PUNTA",
+                          "material_code": "VB90073",
+                          "material_level": "1",
+                          "material_qty": 615,
+                          "total_h": 615
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3167,
+                  "material_code": "VB90075",
+                  "material_name": "HUINCHA DE MEDIR",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3167,
+                          "material_name": "HUINCHA DE MEDIR",
+                          "material_code": "VB90075",
+                          "material_level": null,
+                          "material_qty": null,
+                          "total_h": 0
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3174,
+                  "material_code": "VB90082",
+                  "material_name": "PIE DE METRO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3174,
+                          "material_name": "PIE DE METRO",
+                          "material_code": "VB90082",
+                          "material_level": "7",
+                          "material_qty": 4,
+                          "total_h": 4
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3175,
+                  "material_code": "VB90083",
+                  "material_name": "CAJON METALICO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3175,
+                          "material_name": "CAJON METALICO",
+                          "material_code": "VB90083",
+                          "material_level": "7",
+                          "material_qty": 1,
+                          "total_h": 4
+                      },
+                      {
+                          "material_id": 3175,
+                          "material_name": "CAJON METALICO",
+                          "material_code": "VB90083",
+                          "material_level": "7",
+                          "material_qty": 3,
+                          "total_h": 4
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA IMPLEMENTOS SEGURIDAD",
+          "family_materials": [
+              {
+                  "material_id": 3067,
+                  "material_code": "VA90010",
+                  "material_name": "LENTE SEGURIDAD CLARO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3067,
+                          "material_name": "LENTE SEGURIDAD CLARO",
+                          "material_code": "VA90010",
+                          "material_level": "1",
+                          "material_qty": 205,
+                          "total_h": 205
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3069,
+                  "material_code": "VA90012",
+                  "material_name": "MONO LENTE OPTICO CLARO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3069,
+                          "material_name": "MONO LENTE OPTICO CLARO",
+                          "material_code": "VA90012",
+                          "material_level": "1",
+                          "material_qty": 20,
+                          "total_h": 2018
+                      },
+                      {
+                          "material_id": 3069,
+                          "material_name": "MONO LENTE OPTICO CLARO",
+                          "material_code": "VA90012",
+                          "material_level": "2",
+                          "material_qty": 1998,
+                          "total_h": 2018
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3070,
+                  "material_code": "VA90013",
+                  "material_name": "MONO LENTE OPTICO OSCURO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3070,
+                          "material_name": "MONO LENTE OPTICO OSCURO",
+                          "material_code": "VA90013",
+                          "material_level": "1",
+                          "material_qty": 2,
+                          "total_h": 2
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3073,
+                  "material_code": "VA90016",
+                  "material_name": "GUANTE ANTIVIBRACION",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3073,
+                          "material_name": "GUANTE ANTIVIBRACION",
+                          "material_code": "VA90016",
+                          "material_level": "1",
+                          "material_qty": 1,
+                          "total_h": 14
+                      },
+                      {
+                          "material_id": 3073,
+                          "material_name": "GUANTE ANTIVIBRACION",
+                          "material_code": "VA90016",
+                          "material_level": "1",
+                          "material_qty": 2,
+                          "total_h": 14
+                      },
+                      {
+                          "material_id": 3073,
+                          "material_name": "GUANTE ANTIVIBRACION",
+                          "material_code": "VA90016",
+                          "material_level": "1",
+                          "material_qty": 3,
+                          "total_h": 14
+                      },
+                      {
+                          "material_id": 3073,
+                          "material_name": "GUANTE ANTIVIBRACION",
+                          "material_code": "VA90016",
+                          "material_level": "1",
+                          "material_qty": 8,
+                          "total_h": 14
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3074,
+                  "material_code": "VA90017",
+                  "material_name": "ZAPATO SEGURIDAD",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3074,
+                          "material_name": "ZAPATO SEGURIDAD",
+                          "material_code": "VA90017",
+                          "material_level": "1",
+                          "material_qty": 2,
+                          "total_h": 2
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3075,
+                  "material_code": "VA90018",
+                  "material_name": "BOTAS PARA AGUA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3075,
+                          "material_name": "BOTAS PARA AGUA",
+                          "material_code": "VA90018",
+                          "material_level": "1",
+                          "material_qty": 2,
+                          "total_h": 2
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3076,
+                  "material_code": "VA90019",
+                  "material_name": "TRAJE PARA AGUA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3076,
+                          "material_name": "TRAJE PARA AGUA",
+                          "material_code": "VA90019",
+                          "material_level": "1",
+                          "material_qty": 4,
+                          "total_h": 4
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "BANDEJA Y ESCALERILLA",
+          "family_materials": [
+              {
+                  "material_id": 2499,
+                  "material_code": "GU90361",
+                  "material_name": "RED CEN BPC RAN GALV 350 A 200x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2499,
+                          "material_name": "RED CEN BPC RAN GALV 350 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90361",
+                          "material_level": "7",
+                          "material_qty": 312,
+                          "total_h": 730
+                      },
+                      {
+                          "material_id": 2499,
+                          "material_name": "RED CEN BPC RAN GALV 350 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90361",
+                          "material_level": "7",
+                          "material_qty": 416,
+                          "total_h": 730
+                      },
+                      {
+                          "material_id": 2499,
+                          "material_name": "RED CEN BPC RAN GALV 350 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90361",
+                          "material_level": "9",
+                          "material_qty": 2,
+                          "total_h": 730
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2502,
+                  "material_code": "GU90364",
+                  "material_name": "RED CEN BPC RAN GALV 300 A 200x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2502,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90364",
+                          "material_level": "3",
+                          "material_qty": 615,
+                          "total_h": 615
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2503,
+                  "material_code": "GU90365",
+                  "material_name": "RED CEN BPC RAN GALV 300 A 150x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2503,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 150x100x2.0mm C/SEP",
+                          "material_code": "GU90365",
+                          "material_level": "3",
+                          "material_qty": 5,
+                          "total_h": 5
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2504,
+                  "material_code": "GU90366",
+                  "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2504,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90366",
+                          "material_level": "4",
+                          "material_qty": 765,
+                          "total_h": 22161
+                      },
+                      {
+                          "material_id": 2504,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90366",
+                          "material_level": "4",
+                          "material_qty": 9987,
+                          "total_h": 22161
+                      },
+                      {
+                          "material_id": 2504,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90366",
+                          "material_level": "6",
+                          "material_qty": 657,
+                          "total_h": 22161
+                      },
+                      {
+                          "material_id": 2504,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90366",
+                          "material_level": "6",
+                          "material_qty": 765,
+                          "total_h": 22161
+                      },
+                      {
+                          "material_id": 2504,
+                          "material_name": "RED CEN BPC RAN GALV 300 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90366",
+                          "material_level": "6",
+                          "material_qty": 9987,
+                          "total_h": 22161
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2505,
+                  "material_code": "GU90367",
+                  "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2505,
+                          "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90367",
+                          "material_level": "4",
+                          "material_qty": 543,
+                          "total_h": 28492
+                      },
+                      {
+                          "material_id": 2505,
+                          "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90367",
+                          "material_level": "4",
+                          "material_qty": 8765,
+                          "total_h": 28492
+                      },
+                      {
+                          "material_id": 2505,
+                          "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90367",
+                          "material_level": "6",
+                          "material_qty": 543,
+                          "total_h": 28492
+                      },
+                      {
+                          "material_id": 2505,
+                          "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90367",
+                          "material_level": "6",
+                          "material_qty": 8765,
+                          "total_h": 28492
+                      },
+                      {
+                          "material_id": 2505,
+                          "material_name": "RED CEN BPC RAN GALV 250 A 200x100x2.0mm C/SEP",
+                          "material_code": "GU90367",
+                          "material_level": "6",
+                          "material_qty": 9876,
+                          "total_h": 28492
+                      }
+                  ]
+              },
+              {
+                  "material_id": 2509,
+                  "material_code": "GU90371",
+                  "material_name": "RED CEN BPC RAN GALV 200 A 100x100x2.0mm C/SEP",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 2509,
+                          "material_name": "RED CEN BPC RAN GALV 200 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90371",
+                          "material_level": "7",
+                          "material_qty": 123,
+                          "total_h": 555
+                      },
+                      {
+                          "material_id": 2509,
+                          "material_name": "RED CEN BPC RAN GALV 200 A 100x100x2.0mm C/SEP",
+                          "material_code": "GU90371",
+                          "material_level": "7",
+                          "material_qty": 432,
+                          "total_h": 555
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA MATERIALES MENORES",
+          "family_materials": [
+              {
+                  "material_id": 3024,
+                  "material_code": "RZ90008",
+                  "material_name": "ESCOBILLON",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3024,
+                          "material_name": "ESCOBILLON",
+                          "material_code": "RZ90008",
+                          "material_level": "2",
+                          "material_qty": 12412,
+                          "total_h": 345339
+                      },
+                      {
+                          "material_id": 3024,
+                          "material_name": "ESCOBILLON",
+                          "material_code": "RZ90008",
+                          "material_level": "2",
+                          "material_qty": 312312,
+                          "total_h": 345339
+                      },
+                      {
+                          "material_id": 3024,
+                          "material_name": "ESCOBILLON",
+                          "material_code": "RZ90008",
+                          "material_level": "3",
+                          "material_qty": 20615,
+                          "total_h": 345339
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3025,
+                  "material_code": "RZ90009",
+                  "material_name": "BALDE CONCRETERO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3025,
+                          "material_name": "BALDE CONCRETERO",
+                          "material_code": "RZ90009",
+                          "material_level": "2",
+                          "material_qty": 6666,
+                          "total_h": 7986
+                      },
+                      {
+                          "material_id": 3025,
+                          "material_name": "BALDE CONCRETERO",
+                          "material_code": "RZ90009",
+                          "material_level": "5432",
+                          "material_qty": 563,
+                          "total_h": 7986
+                      },
+                      {
+                          "material_id": 3025,
+                          "material_name": "BALDE CONCRETERO",
+                          "material_code": "RZ90009",
+                          "material_level": "5432",
+                          "material_qty": 755,
+                          "total_h": 7986
+                      },
+                      {
+                          "material_id": 3025,
+                          "material_name": "BALDE CONCRETERO",
+                          "material_code": "RZ90009",
+                          "material_level": "8",
+                          "material_qty": 2,
+                          "total_h": 7986
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3026,
+                  "material_code": "RZ90010",
+                  "material_name": "PALA PARA LIMPIEZA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3026,
+                          "material_name": "PALA PARA LIMPIEZA",
+                          "material_code": "RZ90010",
+                          "material_level": "8",
+                          "material_qty": 2,
+                          "total_h": 2
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3027,
+                  "material_code": "RZ90011",
+                  "material_name": "FOCO HALOGENO",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3027,
+                          "material_name": "FOCO HALOGENO",
+                          "material_code": "RZ90011",
+                          "material_level": "412",
+                          "material_qty": 23,
+                          "total_h": 466
+                      },
+                      {
+                          "material_id": 3027,
+                          "material_name": "FOCO HALOGENO",
+                          "material_code": "RZ90011",
+                          "material_level": "412",
+                          "material_qty": 31,
+                          "total_h": 466
+                      },
+                      {
+                          "material_id": 3027,
+                          "material_name": "FOCO HALOGENO",
+                          "material_code": "RZ90011",
+                          "material_level": "412",
+                          "material_qty": 412,
+                          "total_h": 466
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3028,
+                  "material_code": "RZ90012",
+                  "material_name": "AMPOLLETA HALOGENA 300W",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3028,
+                          "material_name": "AMPOLLETA HALOGENA 300W",
+                          "material_code": "RZ90012",
+                          "material_level": "2",
+                          "material_qty": 8246,
+                          "total_h": 8246
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3032,
+                  "material_code": "RZ90016",
+                  "material_name": "FILM RETRACTIL",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3032,
+                          "material_name": "FILM RETRACTIL",
+                          "material_code": "RZ90016",
+                          "material_level": "4",
+                          "material_qty": 124,
+                          "total_h": 2432
+                      },
+                      {
+                          "material_id": 3032,
+                          "material_name": "FILM RETRACTIL",
+                          "material_code": "RZ90016",
+                          "material_level": "4",
+                          "material_qty": 654,
+                          "total_h": 2432
+                      },
+                      {
+                          "material_id": 3032,
+                          "material_name": "FILM RETRACTIL",
+                          "material_code": "RZ90016",
+                          "material_level": "6",
+                          "material_qty": 124,
+                          "total_h": 2432
+                      },
+                      {
+                          "material_id": 3032,
+                          "material_name": "FILM RETRACTIL",
+                          "material_code": "RZ90016",
+                          "material_level": "6",
+                          "material_qty": 654,
+                          "total_h": 2432
+                      },
+                      {
+                          "material_id": 3032,
+                          "material_name": "FILM RETRACTIL",
+                          "material_code": "RZ90016",
+                          "material_level": "6",
+                          "material_qty": 876,
+                          "total_h": 2432
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3034,
+                  "material_code": "RZ90018",
+                  "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "4",
+                          "material_qty": 124,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "4",
+                          "material_qty": 412,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 123,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 124,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 412,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 532,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 5234,
+                          "total_h": 12393
+                      },
+                      {
+                          "material_id": 3034,
+                          "material_name": "PISO R. GOMA ESTOPEROL NEG. IMPORT. 1.6 MT x 3 mt",
+                          "material_code": "RZ90018",
+                          "material_level": "6",
+                          "material_qty": 5432,
+                          "total_h": 12393
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3035,
+                  "material_code": "RZ90019",
+                  "material_name": "PRENSA ESTOPA PG27",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3035,
+                          "material_name": "PRENSA ESTOPA PG27",
+                          "material_code": "RZ90019",
+                          "material_level": "4",
+                          "material_qty": 23,
+                          "total_h": 1100
+                      },
+                      {
+                          "material_id": 3035,
+                          "material_name": "PRENSA ESTOPA PG27",
+                          "material_code": "RZ90019",
+                          "material_level": "4",
+                          "material_qty": 321,
+                          "total_h": 1100
+                      },
+                      {
+                          "material_id": 3035,
+                          "material_name": "PRENSA ESTOPA PG27",
+                          "material_code": "RZ90019",
+                          "material_level": "6",
+                          "material_qty": 23,
+                          "total_h": 1100
+                      },
+                      {
+                          "material_id": 3035,
+                          "material_name": "PRENSA ESTOPA PG27",
+                          "material_code": "RZ90019",
+                          "material_level": "6",
+                          "material_qty": 321,
+                          "total_h": 1100
+                      },
+                      {
+                          "material_id": 3035,
+                          "material_name": "PRENSA ESTOPA PG27",
+                          "material_code": "RZ90019",
+                          "material_level": "6",
+                          "material_qty": 412,
+                          "total_h": 1100
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3037,
+                  "material_code": "RZ90021",
+                  "material_name": "RODON 20mmØ ( CORDON DE GOMA  )",
+                  "material_measure_unit": "mts",
+                  "material_levels": [
+                      {
+                          "material_id": 3037,
+                          "material_name": "RODON 20mmØ ( CORDON DE GOMA  )",
+                          "material_code": "RZ90021",
+                          "material_level": "6",
+                          "material_qty": 10,
+                          "total_h": 792
+                      },
+                      {
+                          "material_id": 3037,
+                          "material_name": "RODON 20mmØ ( CORDON DE GOMA  )",
+                          "material_code": "RZ90021",
+                          "material_level": "6",
+                          "material_qty": 17,
+                          "total_h": 792
+                      },
+                      {
+                          "material_id": 3037,
+                          "material_name": "RODON 20mmØ ( CORDON DE GOMA  )",
+                          "material_code": "RZ90021",
+                          "material_level": "6",
+                          "material_qty": 765,
+                          "total_h": 792
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3041,
+                  "material_code": "RZ90025",
+                  "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3041,
+                          "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                          "material_code": "RZ90025",
+                          "material_level": "4",
+                          "material_qty": 0,
+                          "total_h": 459
+                      },
+                      {
+                          "material_id": 3041,
+                          "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                          "material_code": "RZ90025",
+                          "material_level": "4",
+                          "material_qty": 12,
+                          "total_h": 459
+                      },
+                      {
+                          "material_id": 3041,
+                          "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                          "material_code": "RZ90025",
+                          "material_level": "6",
+                          "material_qty": 0,
+                          "total_h": 459
+                      },
+                      {
+                          "material_id": 3041,
+                          "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                          "material_code": "RZ90025",
+                          "material_level": "6",
+                          "material_qty": 12,
+                          "total_h": 459
+                      },
+                      {
+                          "material_id": 3041,
+                          "material_name": "RUEDAS DE GOMA GIRATORIA DE 4\"",
+                          "material_code": "RZ90025",
+                          "material_level": "6",
+                          "material_qty": 435,
+                          "total_h": 459
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA ARRIENDOS Y PRUEBAS",
+          "family_materials": [
+              {
+                  "material_id": 3233,
+                  "material_code": "VD90021",
+                  "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "1",
+                          "material_qty": 3,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "1",
+                          "material_qty": 2,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "1",
+                          "material_qty": 3,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "1",
+                          "material_qty": 4,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "1",
+                          "material_qty": 56,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "2",
+                          "material_qty": 512,
+                          "total_h": 3703
+                      },
+                      {
+                          "material_id": 3233,
+                          "material_name": "MEDICION MALLAS Y RESISTENCIA",
+                          "material_code": "VD90021",
+                          "material_level": "2",
+                          "material_qty": 3123,
+                          "total_h": 3703
+                      }
+                  ]
+              }
+          ]
+      },
+      {
+          "material_family": "FAMILIA PLANOS AS-BUILT",
+          "family_materials": [
+              {
+                  "material_id": 3049,
+                  "material_code": "SA90002",
+                  "material_name": "COPIA DE PLANOS AS BUILT",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3049,
+                          "material_name": "COPIA DE PLANOS AS BUILT",
+                          "material_code": "SA90002",
+                          "material_level": "1",
+                          "material_qty": 16,
+                          "total_h": 120
+                      },
+                      {
+                          "material_id": 3049,
+                          "material_name": "COPIA DE PLANOS AS BUILT",
+                          "material_code": "SA90002",
+                          "material_level": "1",
+                          "material_qty": 44,
+                          "total_h": 120
+                      },
+                      {
+                          "material_id": 3049,
+                          "material_name": "COPIA DE PLANOS AS BUILT",
+                          "material_code": "SA90002",
+                          "material_level": "4",
+                          "material_qty": 16,
+                          "total_h": 120
+                      },
+                      {
+                          "material_id": 3049,
+                          "material_name": "COPIA DE PLANOS AS BUILT",
+                          "material_code": "SA90002",
+                          "material_level": "4",
+                          "material_qty": 44,
+                          "total_h": 120
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3050,
+                  "material_code": "SA90003",
+                  "material_name": "CD PLANOS AS BUILT",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "1",
+                          "material_qty": 16,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "1",
+                          "material_qty": 423,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "1",
+                          "material_qty": 432,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "1",
+                          "material_qty": 1234,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "4",
+                          "material_qty": 16,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "4",
+                          "material_qty": 423,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "4",
+                          "material_qty": 987,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "4",
+                          "material_qty": 9877,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "6",
+                          "material_qty": 421,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "6",
+                          "material_qty": 987,
+                          "total_h": 24693
+                      },
+                      {
+                          "material_id": 3050,
+                          "material_name": "CD PLANOS AS BUILT",
+                          "material_code": "SA90003",
+                          "material_level": "6",
+                          "material_qty": 9877,
+                          "total_h": 24693
+                      }
+                  ]
+              },
+              {
+                  "material_id": 3051,
+                  "material_code": "SA90004",
+                  "material_name": "CERTIFICACION BALIZAS",
+                  "material_measure_unit": "c/u",
+                  "material_levels": [
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "1",
+                          "material_qty": 246,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "2",
+                          "material_qty": 412,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "2",
+                          "material_qty": 3123,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "4",
+                          "material_qty": 432,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "4",
+                          "material_qty": 544,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "6",
+                          "material_qty": 432,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "6",
+                          "material_qty": 543,
+                          "total_h": 6276
+                      },
+                      {
+                          "material_id": 3051,
+                          "material_name": "CERTIFICACION BALIZAS",
+                          "material_code": "SA90004",
+                          "material_level": "6",
+                          "material_qty": 544,
+                          "total_h": 6276
+                      }
+                  ]
+              }
+          ]
+      }
+  ],
+  "project_number": "c5c89653-309d-498d-9622-4287c90ff548",
+  "project_title": "Prueba Juan",
+  "principal_name": "Desconocido",
+  "address": "Maria Luisa Santander 565",
+  "status": "in_cubication",
+  "created_at": "17-02-2023 11:32:19",
+  "updated_at": "16-03-2023 15:20:24",
+  "version": 2,
+  "mo": null,
+  "gf": null,
+  "gg": null,
+  "utl": null,
+  "province": "Santiago",
+  "commune": "Chonchi",
+  "created_by": {
+      "id": 1,
+      "full_name": "Jon Doe"
+  },
+  "cubicator": [],
+  "supervised_by": []
+}]
+
+let totalcito = total.material_group_material.map((el) => {
+  return el.family_materials
+})
+console.log(totalcito)
+/* ⣷⣭⣭⣖⣚⣯⠶⢈⣥⣖⣓⠦⢴⣶⡤⣀⠀⠀⠀⠀⢀⣾⣿⡏⠀⠀⠀⠀⠀⠀⠀⢹⣧⠀⠀⠀⠀⢀⣠⣤⠞⠉⢉⠽⠖
+⡏⠩⠿⢗⣚⣛⣩⡥⠾⠏⣩⣛⠛⠿⠭⢌⡙⠦⠀⣰⣿⠋⣿⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣇⠠⠔⠚⠋⡝⠁⢀⡄⠀⠀⠀
+⣗⣒⣖⣀⣀⣀⣀⣈⠭⠭⠤⠠⠤⠤⠀⠀⠀⠀⣼⠿⠁⢸⠇⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⡀⠀⣀⢴⠃⠀⡸⠀⠀⠀⠀
+⡿⠿⠿⠿⠛⠛⠳⣶⣦⣤⣄⠀⠀⠀⠀⠀⢀⣾⣿⠋⢀⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣇⠈⠛⡿⠀⣰⠃⠀⠀⡄⠀ 
+⣗⡺⠦⠉⠩⠄⠀⢒⣂⠢⡀⢀⠀⠀⠀⢠⣿⠿⡋⢀⣼⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⢀⣿⡄⢠⠃⢠⠃⠀⠀⠀⡇⠀
+⣷⣶⣶⠤⠭⠗⢒⠨⠭⠅⠀⢀⣀⠤⣴⣿⣿⣿⣤⣾⡟⢉⣙⡓⠶⠦⢄⣀⡀⠀⠀⢸⣿⠈⣿⣧⢸⢀⠏⠀⠀⠀⢸⠀⠀
+⡯⢾⣒⣊⠭⢕⡀⠌⣀⡤⠚⣉⠴⡾⠿⠛⠉⠉⠀⠀⠀⠉⠿⠶⠭⠷⣦⡀⠸⡉⠓⢾⣿⣤⣿⣿⠈⣿⡀⠀⠀⢠⠇⠀⠀
+⣯⢽⢖⣋⡩⣖⣨⠟⠁⠀⠀⠀⠀⠀⢀⣠⠴⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠳⠤⡰⠈⠙⣻⢿⣿⡆⠹⡍⠉⠉⠹⣄⠀⠀
+⣗⣿⣟⣲⢍⣠⠋⠀⠀⠀⠀⣠⣶⠖⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠪⡻⢦⣜⢮⡀⠀⣀⡩⣅
+⣿⣿⣟⣮⡟⠁⠀⠀⠀⢠⡞⡉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠈⠪⡪⡻⣷⡹⣿⣝⢮⣂
+⣿⠾⣿⠏⠀⠀⠀⠊⢠⣮⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣞⢸⠀⠀⢠⡀⠀⠙⢞⡜⢿⡄⡙⢷⣮
+⣗⣿⡟⠀⠀⠀⠎⢠⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡏⠀⠀⡰⠔⢀⡼⢸⠘⣇⠀⠀⢇⠠⠀⠈⢢⡈⢿⣦⡱⠙
+⣏⣺⠀⠀⠀⡜⣠⠯⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⢀⠜⢹⠡⠀⢠⠃⣠⢾⢁⡏⠀⣿⡰⠀⠸⡀⢷⠀⠀⠱⠈⣷⣥⣴
+⣿⡏⠀⠀⡸⢡⠋⠀⠀⠀⠀⢀⣴⠇⠀⠀⢀⡤⠋⣠⠏⠀⡏⠀⠰⢃⡔⢁⠇⣸⠃⠀⠸⣱⢇⠀⠇⠈⡆⠀⠀⠀⢻⣿⣿
+⢸⣡⢠⠀⣷⢏⠀⠀⠀⠀⡠⡺⠃⠀⠀⡠⠊⠀⡴⣅⠀⣸⠀⢀⡴⠋⢜⡎⢠⡏⠀⠀⠀⢏⡾⡄⠘⠀⠀⠀⠀⠀⣾⣿⣿
+⡿⢻⢮⢀⠇⠂⠀⠀⡠⡪⡾⠃⠀⣠⠞⡡⢪⣞⠻⣽⣻⡇⡠⠋⠀⢀⡞⢀⡾⠁⠀⠀⠀⠸⣱⣣⠀⠀⢀⣠⣴⣿⣿⣿⣿ 
+⡇⣇⡆⡜⡀⠀⠠⢚⣼⠟⠁⠀⠜⡡⢘⣵⡿⣾⡇⢀⣿⠞⠀⠀⣠⠎⢠⣾⠁⠀⢀⣠⡤⠒⢣⣿⠀⠀⢻⣿⣿⣿⣿⣿⣿
+⡷⡽⠶⡷⣄⡀⢠⠞⠁⠀⢀⢤⡺⡾⠛⠿⣟⠽⢡⢟⠁⠀⣀⡴⠋⣰⡟⢁⣠⠾⢋⣫⣽⣧⣌⣻⡆⠀⠘⣿⣿⣿⣿⣿⣿
+⡽⠀⠀⢱⠸⣟⢶⣶⠶⢖⡊⢡⠞⠁⠀⠀⢀⡴⠁⢀⡠⠞⢉⣠⠞⠉⠀⠁⢠⢴⣿⣿⣿⢷⠉⢷⡇⠀⣶⣿⡿⣿⣧⣌⢿
+⠁⡀⠀⣁⠀⢻⣌⣑⠂⣠⠔⠁⠀⠀⠀⣴⣿⣾⣚⣩⠶⠛⠉⠀⠀⠀⠀⠘⢆⠈⢯⣿⢿⡟⠀⠀⡇⠀⢹⣟⣿⠧⢤⣽⠿
+⢸⡇⠀⢏⠀⠀⠙⠛⠉⠁⠀⠀⠀⢀⣾⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠈⠙⠒⠶⠋⠉⣷⠀⠈⢿⡛⠋⢉⣾⣾
+⢧⠹⣄⠈⣦⡀⠀⠀⠀⠀⠀⠀⢠⣾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⠉⠀⠀⠀⠀⠀⠀⠀⣿⠀⡄⠘⣿⡄⠉⢉⣱
+⢸⣆⠀⠉⠛⠓⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⡇⡄⠸⣿⣦⣝⣿
+⢸⢸⣦⡀⣀⣤⣦⡀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣧⣯⣍⣑⠦⡀⠀⠀⠀⠀⠀⠀⠀⡟⡀⠃⠁⢄⠙⣭⣽⣿
+⢸⢸⡆⠉⢺⣏⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣟⣼⡇⠀⠀⠀⠀⠀⠀⢠⠇⡇⢰⠀⢸⡆⠈⣿⣿
+⣿⢈⡇⠈⢸⣿⠀⢹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⡾⠿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⣼⢰⠁⡌⠀⢸⡇⠀⣿⣿
+⣿⢸⣧⠀⢸⣿⠀⠀⠳⡀⠀⠀⠀⢠⠒⠛⠢⡨⡇⠀⠈⠻⣿⠿⣿⣿⣿⠁⠀⠀⠀⠀⠀⢀⣼⣿⠘⢀⠇⡄⣿⠃⢰⣿⣿
+⣿⢸⣿⢸⢸⣿⠀⠀⠀⡝⠓⠲⣤⠇⠀⠀⠀⡇⣧⠀⠀⠀⠀⠀⢹⣿⡁⠀⠀⠀⠀⠀⣠⣿⡿⣿⢠⢸⠀⣿⣿⠀⣾⣿⣿
+⣿⢸⣾⠈⣼⣿⠀⠀⣸⠁⠀⠀⣹⠀⠀⠀⢠⠇⠘⢆⡀⠀⠀⢀⣼⣯⡇⠀⠀⠀⢀⣼⣿⣞⢳⡇⢸⠁⠀⣿⣏⠀⣿⣿⣿
+⣿⢸⣿⡄⢻⣿⠀⢀⠇⠀⠀⠀⡿⠀⠀⠀⣸⠀⠀⠀⠉⠛⠛⠓⠛⠁⠀⠀⢀⣴⡯⣟⢿⡟⣾⡇⡏⡀⢀⣿⣿⣦⣌⠙⢿
+⠋⢻⣻⣇⣦⢸⡀⡾⠀⠀⠀⣠⠃⠀⠀⠀⡟⢤⡀⠀⠀⠀⠀⠀⠀⠀⣀⣴⡟⠁⠀⢸⣿⡹⣽⣿⠝⢧⣼⣿⡿⠋⢿⠀⣿ */
