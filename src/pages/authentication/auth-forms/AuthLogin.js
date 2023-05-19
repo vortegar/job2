@@ -37,6 +37,7 @@ import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons';
 
 import { useState } from 'react';
 import MuiAlert from '@mui/material/Alert';
+//! se limina esta importacion
 import { getMaterialDataMain } from 'pages/materials/materials_services/materials_service';
 
 // ============================|| FIREBASE - LOGIN ||============================ //
@@ -89,10 +90,14 @@ const AuthLogin = () => {
         if(decode){
           return navigate('activate-user');
         }
-        setTimeout(() => {
-          getMaterialDataMain(dispatch, setLoading, navigate)
-        }, 300);
-        
+
+        //! Este codigo se encarga de cargar los 3200 materiales
+        // setTimeout(() => {
+          // getMaterialDataMain(dispatch, setLoading, navigate)
+        // }, 300); 
+
+        //* Agrego esta linea para que luego de validar el JWT me redirija a projects
+        navigate('/projects');        
     })
     .catch(function (error) {
       console.log(error)

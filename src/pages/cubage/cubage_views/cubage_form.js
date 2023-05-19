@@ -18,7 +18,9 @@ import TitleComponent from "components/main_components/title_component/index";
 // FUNCTION IMPORTS
 import { addCubageFloor, deleteCubageFloor, restoreCubageFloor } from "../cubage_slices/full_cubage_sections/cubage_floor_slice";
 import { getFamilyData } from "pages/families/families_services/families_service";
-import { getMaterialData } from "pages/materials/materials_services/materials_service";
+
+//! Esta importacion de abajo no se usa en este archivo
+//import { getMaterialData } from "pages/materials/materials_services/materials_service";
 
 // AXIOS INSTANCE IMPORT
 import instance from 'services/axios_config';
@@ -84,7 +86,8 @@ function CubageForm() {
     dispatch(restoreMaterialGroups())
     //material-family data
     getFamilyData(dispatch, deleteId);
-    getMaterialData(dispatch, deleteId, filters);
+    //! Esta funcion no debe ser llamada aca
+    //getMaterialData(dispatch, deleteId, filters);
     //getting cubication data
     getCubicationData(dispatch, cid, deleteId);
 

@@ -6,45 +6,54 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 // GET DATA FROM API AND SEND TO THE STORE
-export const getMaterialData = (dispatch, deleteId, filters) => {
-    console.log("caragndo datos");
+export const getMaterialData = ( dispatch, deleteId, filters, setRowsLoading, offsetPage, limitPage  ) => {
+    console.log("cargando datos");
     if(!filters) {
         return filters = {
             familyFilter: '',
             subFamilyFilter: '',
         }
-    }
-    instance.get(`materials/?limit=10000&material_family=${filters.familyFilter}&material_subfamily=${filters.subFamilyFilter}`)
-        .then((data) => {
-            const materials = data.data?.results;
-            materials.map((material) => {
-                const { id, name, description, code, price, measure_unit, material_family_data, material_family, material_subfamily_data, material_subfamily } = material;
-                dispatch(addMaterial({
-                    id: id,
-                    name: name,
-                    description: description,
-                    code: code,
-                    price: price,
-                    measure_unit: measure_unit,
-                    material_family: material_family_data.name,
-                    material_family_id: material_family,
-                    material_subfamily: material_subfamily_data.name,
-                    material_subfamily_id: material_subfamily,
-                }))
-            });
-            dispatch(deleteMaterial({ id: deleteId }))
-        })
-        .catch((error) => {
-            console.log(error);
-        })
-}
+    };
+    
+        //! tiene un limit establecido de 10000
+        setRowsLoading( true );
+        instance.get(`materials/?offset=${ 0 }&limit=${ limitPage }&material_family=${filters.familyFilter}&material_subfamily=${filters.subFamilyFilter}`)
+            .then((data) => {
+                const materials = data.data?.results;
+                // console.log(materials)
+                materials.map((material) => {
+                    const { id, name, description, code, price, measure_unit, material_family_data, material_family, material_subfamily_data, material_subfamily } = material;
+                    dispatch(addMaterial({
+                        id: id,
+                        name: name,
+                        description: description,
+                        code: code,
+                        price: price,
+                        measure_unit: measure_unit,
+                        material_family: material_family_data.name,
+                        material_family_id: material_family,
+                        material_subfamily: material_subfamily_data.name,
+                        material_subfamily_id: material_subfamily,
+                    }))
+                });
+                setRowsLoading( false );
+                dispatch(deleteMaterial({ id: deleteId }))
+                return{
+                    materials
+                }
+            })
+            .catch((error) => {
+                console.log(error);
+            })}
+    
 //ONlY Materials 
 export const getMaterialDataMain = (dispatch, setLoading, navigate) => {
     //window.location()
     instance.get(`materials/?limit=10000`)
         .then((data) => {
             const materials = data.data?.results;
-            //console.log(materials)
+            console.log(materials) //3200 materiales
+            console.log('si')
             materials.map((material) => {
                 const { id, name, description, code, price, measure_unit, material_family_data, material_family, material_subfamily_data, material_subfamily } = material;
                 dispatch(addMaterial({
@@ -60,7 +69,8 @@ export const getMaterialDataMain = (dispatch, setLoading, navigate) => {
                     material_subfamily_id: material_subfamily,
                 }))
             });
-            navigate('/projects');
+            //! Elimino esta linea para que no redirija a ningun lado la funcion
+            // navigate('/projects');
         })
         .catch((error) => {
             console.log(error);

@@ -1,5 +1,5 @@
 //lazy
-import { lazy, useCallback } from 'react';
+import { lazy } from 'react';
 
 import Loadable from 'components/Loadable';
 
@@ -7,18 +7,10 @@ import Loadable from 'components/Loadable';
 
 // REACT IMPORTS
 import React, { useEffect, useState } from 'react';
-import { IconButton, Collapse, Alert, Typography } from '@mui/material';
-import { EditOutlined, 
-        DeleteOutlined, 
-        CloseCircleOutlined, 
-        AppstoreAddOutlined, 
-        FilterOutlined, UndoOutlined, 
-        UploadOutlined, 
-        InfoCircleOutlined, 
-        DownloadOutlined } from '@ant-design/icons';
+import { IconButton, Collapse, Alert } from '@mui/material';
+import { EditOutlined, DeleteOutlined, CloseCircleOutlined, AppstoreAddOutlined, FilterOutlined, UndoOutlined, UploadOutlined, InfoCircleOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
-//! Esta linea no se usa
-// import {BrowserRouter as Router, Link } from "react-router-dom";
+import {BrowserRouter as Router, Link } from "react-router-dom";
 
 // CUSTOM COMPONENTS IMPORTs
 import MainCard from 'components/MainCard';
@@ -32,12 +24,16 @@ import{ restoreMaterial } from './materials_slices/materials_slice'
 // VIEWS IMPORTS
 //import ViewProduct from './materials_views/materials_view';
 const ViewProduct = Loadable(lazy(() => import('./materials_views/materials_view')));
+
 //import FormDialog from './materials_views/materials_form';
 const FormDialog = Loadable(lazy(() => import('./materials_views/materials_form')));
+
 //import MaterialsFilters from './materials_views/materials_filter';
 const MaterialsFilters = Loadable(lazy(() => import('./materials_views/materials_filter')));
 
 import { deleteData, getMaterialData, getMaterialDataMain } from './materials_services/materials_service';
+
+
 
 import { setFamilyFilter, setSubFamilyFilter } from './materials_slices/materials_filter';
 
@@ -51,133 +47,120 @@ import { Grid } from '../../../node_modules/@mui/material/index';
 
 
 const SamplePage = () => {
+    const dispatch = useDispatch();
+    const [deleteId, setDeleteId] = useState('');
+    const [uploadView, setUploadView] = useState('');
+    const [openAlert, setOpenAlert] = React.useState(false);
+    
+    // IMPORTING STATES FROM THE STORE
+    const openView = useSelector(store => store.productsStates.openView);
+    const open = useSelector(store => store.productsStates.open);
+    const id = useSelector(store => store.productsStates.id);
+    const filterView = useSelector(store => store.productsStates.filterView);
 
-  const dispatch = useDispatch();
-  const [deleteId, setDeleteId] = useState('');
-  const [uploadView, setUploadView] = useState('');
-  const [openAlert, setOpenAlert] = useState(false);
-  
-  // IMPORTING STATES FROM THE STORE
-  const open = useSelector(store => store.productsStates.open);
-  const id = useSelector(store => store.productsStates.id);
-  const openView = useSelector(store => store.productsStates.openView);
-  const filterView = useSelector(store => store.productsStates.filterView);
-  
-  // FILTER IMPORTS
-  const filters = useSelector(store => store.materialsFilters);
-  
-  // IMPORTING INITIAL STATE FROM THE STORE
-  const rows = useSelector(store => store.materials);
-
-  const filt = rows.filter((material) => material.id === 0);
-
-  //* Se agrega
-  const [count, setCount] = useState(0);
-  const [limitPage, setLimitPage] = useState(200);
-  const [offsetPage, setOffsetPage] = useState(0);
-  const [rowsLoading, setRowsLoading] = useState(false);  
-  const [hiddenBtnLoad, setHiddenBtnLoad] = useState(false);  
-  
-// IMPORT DATA FROM API
-  useEffect(() => {
-    getMaterialData( dispatch, deleteId, filters, setRowsLoading, offsetPage, limitPage );
-    // console.log('getMaterial')
-    // setLoadingData( true )
-    // getFamilyData(dispatch);
-    // getSubFamilyData(dispatch, deleteId, filters);
-}, [count]);
+    // FILTER IMPORTS
+    const filters = useSelector(store => store.materialsFilters);
+    
+    // IMPORTING INITIAL STATE FROM THE STORE
+    const rows = useSelector(store => store.materials);
 
 
+    //* Se agrega
+    const [rowsLoading, setRowsLoading] = useState(false);    
+    const [offsetPage, setOffsetPage] = useState(0);
+    const [limitPage, setLimitPage] = useState(200);
+    
+    
+    // IMPORT DATA FROM API
+    
+    useEffect(() => {
+        getMaterialData( dispatch, deleteId, filters, setRowsLoading, offsetPage, limitPage );
+        // setLoadingData( true )
+        // getFamilyData(dispatch);
+        // getSubFamilyData(dispatch, deleteId, filters);
+    }, [limitPage])
+    
+    //console.log('material',rows)
+    const filt = rows.filter((material) => material.id === 0);
 
-  const increment = async() => {
+    // // IMPORTING STATES FROM THE STORE
+    // const openView = useSelector(store => store.productsStates.openView);
+    // const open = useSelector(store => store.productsStates.open);
+    // const id = useSelector(store => store.productsStates.id);
+    // const filterView = useSelector(store => store.productsStates.filterView);
 
-    const textLimitMaterial =  await document.querySelector('p.MuiTablePagination-displayedRows');
-    const textContent = await textLimitMaterial.textContent;
-    const splitArray =  textContent.split(' de ');
-    const limitNumber =  Number(splitArray[1]);
-
-    if( limitPage > limitNumber ) {
-        setHiddenBtnLoad( true );
-    };
-
-    setOffsetPage(offsetPage + 100);
-    setLimitPage(limitPage + 100)
-    setCount( count  + 1 )
-  };
-
-
- // DATAGRID COLUMNS CONFIGURATION
-  const columns = [
-    {
-        field: 'name',
-        headerName: 'Nombre',
-        flex: 1,
-        minWidth: 150,
-        headerAlign: 'center',
-    },
-    {
-        field: 'description',
-        headerName: 'Descripcion',
-        flex: 1,
-        minWidth: 150,
-        headerAlign: 'center',
-    },
-    {
-        field: 'price',
-        headerName: 'Precio',
-        flex: 0.5,
-        minWidth: 100,
-        headerAlign: 'center',
-    },
-    {
-        field: 'material_family',
-        headerName: 'Familia',
-        flex: 1,
-        minWidth: 100,
-        headerAlign: 'center',
-    },
-    {
-        field: 'material_subfamily',
-        headerName: 'Sub Familia',
-        flex: 1,
-        minWidth: 100,
-        headerAlign: 'center',
-    },
-    {
-        field: 'code',
-        headerName: 'Codigo',
-        flex: 0.6,
-        minWidth: 110,
-        headerAlign: 'center',
-    },
-    {
-        field: 'measure_unit',
-        headerName: 'Unidad',
-        flex: 0.3,
-        minWidth: 100,
-        headerAlign: 'center',
-    },
-    {
-        field: 'view',
-        headerName: 'Acciones',
-        sortable: false,
-        minWidth: 168,
-        maxWidth: 250,
-        flex: 0.9,
-        headerAlign: 'center',
-        renderCell: (params) => (
-            <>
-                <ButtonComponent onClick={() => { dispatch(setOpen(true)), dispatch(setIsNew(false)), dispatch(setId(params.id)) }}
-                    variant="outlined" color='secondary' tooltip='Editar'>
-                    <EditOutlined />
-                </ButtonComponent>&nbsp;&nbsp;
-                <ButtonComponent onClick={() => handleDelete(params.id)} variant="contained" color='error' tooltip='Eliminar'>
-                    <DeleteOutlined />
-                </ButtonComponent>
-            </>
-        )
-    },
-]
+    // DATAGRID COLUMNS CONFIGURATION
+    const columns = [
+        {
+            field: 'name',
+            headerName: 'Nombre',
+            flex: 1,
+            minWidth: 150,
+            headerAlign: 'center',
+        },
+        {
+            field: 'description',
+            headerName: 'Descripcion',
+            flex: 1,
+            minWidth: 150,
+            headerAlign: 'center',
+        },
+        {
+            field: 'price',
+            headerName: 'Precio',
+            flex: 0.5,
+            minWidth: 100,
+            headerAlign: 'center',
+        },
+        {
+            field: 'material_family',
+            headerName: 'Familia',
+            flex: 1,
+            minWidth: 100,
+            headerAlign: 'center',
+        },
+        {
+            field: 'material_subfamily',
+            headerName: 'Sub Familia',
+            flex: 1,
+            minWidth: 100,
+            headerAlign: 'center',
+        },
+        {
+            field: 'code',
+            headerName: 'Codigo',
+            flex: 0.6,
+            minWidth: 110,
+            headerAlign: 'center',
+        },
+        {
+            field: 'measure_unit',
+            headerName: 'Unidad',
+            flex: 0.3,
+            minWidth: 100,
+            headerAlign: 'center',
+        },
+        {
+            field: 'view',
+            headerName: 'Acciones',
+            sortable: false,
+            minWidth: 168,
+            maxWidth: 250,
+            flex: 0.9,
+            headerAlign: 'center',
+            renderCell: (params) => (
+                <>
+                    <ButtonComponent onClick={() => { dispatch(setOpen(true)), dispatch(setIsNew(false)), dispatch(setId(params.id)) }}
+                        variant="outlined" color='secondary' tooltip='Editar'>
+                        <EditOutlined />
+                    </ButtonComponent>&nbsp;&nbsp;
+                    <ButtonComponent onClick={() => handleDelete(params.id)} variant="contained" color='error' tooltip='Eliminar'>
+                        <DeleteOutlined />
+                    </ButtonComponent>
+                </>
+            )
+        },
+    ]
 
     // STATES UPDATE FUNCTIONS
     const closeModal = () => {
@@ -226,7 +209,6 @@ const SamplePage = () => {
         closeFilter();
     }
 
-
     return (
         <>
             {open ? <FormDialog abrir={open} closeModal={closeModal} id={id} product={rows.filter(product => product.id === id)} /> : ''}
@@ -248,7 +230,8 @@ const SamplePage = () => {
                         >
                             <CloseCircleOutlined />
                         </IconButton>
-                    }>
+                    }
+                >
                     Eliminado correctamente
                 </Alert>
             </Collapse>
@@ -272,44 +255,16 @@ const SamplePage = () => {
                             <DataGridComponent 
                                 rows={rows} 
                                 columns={columns} 
-                                loading={rows.length === 0 || rowsLoading }
+                                loading={rows.length === 0 || rowsLoading === true}
                                 setOffsetPage = { setOffsetPage }
                                 setLimitPage  = { setLimitPage }
                                 limitPage = { limitPage }
                                 offsetPage = { offsetPage }
-                                increment=  {increment}
-                            />
+                                /> {/*loading={rows.length === 1}*/}
                         </div>
                     </div>
                 </div>
             </MainCard>
-            <div style={{ display: 'flex', 
-                        justifyContent: 'center', 
-                        flexDirection: 'column', 
-                        width: '30%',
-                        margin: '0 auto'
-                        }}>
-               
-                {
-                    (hiddenBtnLoad) 
-                        ? <Alert severity="success">Todos los materiales han sido cargados</Alert>
-                        :
-                        <>
-                            <Typography variant="caption" style={{ margin: '10px auto' }} fontWeight="bold">
-                                {limitPage} <Typography variant="caption" >materiales cargados</Typography> 
-                            </Typography>
-                            <ButtonComponent 
-                                onClick={ increment }
-                                disabled={rowsLoading}
-                                variant="contained" 
-                                color="success">
-                                    <DownloadOutlined  />&nbsp;&nbsp;Cargar materiales 
-                            </ButtonComponent> 
-                        </>  
-                                         
-                }
-                
-            </div>
         </>
     );
 };

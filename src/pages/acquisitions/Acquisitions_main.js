@@ -9,7 +9,9 @@ import DataGridComponent from 'components/main_components/datagrid_component/ind
 
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { getFamilyData } from "pages/families/families_services/families_service";
-import { getMaterialData } from "pages/materials/materials_services/materials_service";
+
+//! Este codigo no usa la importacion de abajo
+//import { getMaterialData } from "pages/materials/materials_services/materials_service";
 
 
 import { getListProjects } from 'pages/projects/projects_services/projects_service';
@@ -26,6 +28,7 @@ const AcquisitionsMain = () => {
 
     const deleteId = '';
     const filters = useSelector(store => store.materialsFilters);
+    //! Esta funcion no se usa aca
     //getMaterialData(dispatch, deleteId, filters);
 
     const columns = [

@@ -9,6 +9,7 @@ import DataGridComponent from 'components/main_components/datagrid_component/ind
 
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { getFamilyData } from "pages/families/families_services/families_service";
+//! Esta funcion de abajo no se usa en este archivo
 import { getMaterialData } from "pages/materials/materials_services/materials_service";
 
 import { getListProjects } from 'pages/projects/projects_services/projects_service';
@@ -19,6 +20,7 @@ const CubageProjectsList = () => {
     useEffect(() => {
         dispatch(getListProjects());
         //getFamilyData(dispatch, deleteId);
+        //! Esta funcionm no se usa en este archivo
         //getMaterialData(dispatch, deleteId, filters);
     }, []);
 
