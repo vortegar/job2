@@ -7,7 +7,6 @@ import AcquisitionsLayout from 'pages/acquisitions/acquisitions_views/layout/acq
 
 // render - sample page
 const MarerialsMain = Loadable(lazy(() => import('pages/materials/Materials_main')));
-// const MarerialsMain = Loadable(lazy(() => import('pages/materials/Materials_main')));
 const Projects = Loadable(lazy(() => import('pages/projects/Projects_main')));
 const FamiliesMain = Loadable(lazy(() => import('pages/families/Families_main')));
 const SubFamiliesMain = Loadable(lazy(() => import('pages/sub_families/SubFamilies_main')));

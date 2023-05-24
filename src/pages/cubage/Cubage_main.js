@@ -20,11 +20,13 @@ import { Link } from 'react-router-dom';
 
 //import CubageAddForm from './cubage_views/cubage_add_form';
 const CubageAddForm = Loadable(lazy(() => import('./cubage_views/cubage_add_form')));
+const CubageMessage = Loadable(lazy(() => import('./cubage_views/cubage_message')));
 
 import { getUserCubicatorData, getUserSupervisorData } from './cubage_services/cubage_service';
-import { setOpen } from './cubage_slices/cubage_states/cubage_main_states';
+import { setOpen, setMessage } from './cubage_slices/cubage_states/cubage_main_states';
 import { getListProjects } from 'pages/projects/projects_services/projects_service';
 import { restoreCubageProject } from './cubage_slices/full_cubage_sections/cubageProjects_slice';
+import { ConsoleView } from 'react-device-detect';
 
 const CubageComponent = () => {
   const dispatch = useDispatch();
@@ -41,14 +43,16 @@ const CubageComponent = () => {
     dispatch(getListProjects());
   }, []);
 
-  const { open } = useSelector((store) => store.cubageMainStates);
-
-  // DATA IMPORT FROM STORE
+  const materials = useSelector((store) => store.materials);
+  // console.log( materials.length )
+  const { open, message } = useSelector((store) => store.cubageMainStates);
+  // DATA IMPORT FRFM STORE
   const rows = useSelector((store) => store.cubageProjects);
 
   const cubicationSubmit = (params) => {
     dispatch(addCurrentCubage(params.row));
   };
+
 
   const columns = [
     {
@@ -88,39 +92,56 @@ const CubageComponent = () => {
       flex: 1.0,
       renderCell: (params) => (
         <>
-          <Link to={`/cubageForm/${pid}/${params.id}`}>
-            <ButtonComponent variant="contained" color="secondary" tooltip="Cubicar Actividad">
-              <TableOutlined />
-            </ButtonComponent>
-          </Link>
+        {
+          (materials.length === 0 ) 
+            ?
+                <ButtonComponent 
+                  onClick={() => {
+                    dispatch(setMessage(true));
+                  }} 
+                  variant="contained" 
+                  color="secondary" 
+                  tooltip="Cubicar Actividad">
+                  <TableOutlined />
+              </ButtonComponent>
+            
+            :<Link to={`/cubageForm/${pid}/${params.id}`}>
+                <ButtonComponent variant="contained" color="secondary" tooltip="Cubicar Actividad">
+                  <TableOutlined />
+                </ButtonComponent>
+            </Link>
+        }
         </>
       )
     }
   ];
   const closeModal = () => {
-    dispatch(restoreCubageProject());
-    dispatch(setOpen(false));
+    dispatch( restoreCubageProject() );
+    dispatch( setOpen(false) );
+    dispatch( setMessage( false) )
     setTimeout(() => {
       getCubageData(dispatch, deleteId, pid);
       getCubageData(dispatch, deleteId, pid);
     }, 1000)
     
   };
-
+   
   return (
     <>
       <ToastContainer />
+      <CubageMessage abrir={message} closeModal={closeModal} pid={pid} />
       <CubageAddForm abrir={open} closeModal={closeModal} pid={pid} />
       <MainCard>
         <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Link to={`/cubagelist`}>
-      <ButtonComponent variant="contained" color='warning' tooltip="Listado de proyectos">
+          <ButtonComponent variant="contained" color='warning' tooltip="Listado de proyectos">
             <ArrowLeftOutlined />&nbsp;&nbsp;Volver
           </ButtonComponent>
-      </Link>
+        </Link>
           <ButtonComponent
             onClick={() => {
               dispatch(setOpen(true));
+              // dispatch(setMessage(true));
             }}
             variant="contained"
             color="primary"

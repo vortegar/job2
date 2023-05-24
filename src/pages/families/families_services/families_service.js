@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 // GET DATA FROM API AND SEND TO THE STORE
-export const getFamilyData = (dispatch, deleteId) => {
+export const getFamilyData = ( dispatch, deleteId, countFamily ) => {
     // export const getFamilyData  = (filters, deleteId) =>(dispatch)=>{
     //console.log(dispatch)
     // (filters)=> (dispatch) =>
@@ -19,7 +19,7 @@ export const getFamilyData = (dispatch, deleteId) => {
     
 
     // instance.get('material-families/?limit=1000&name='+f?.name+'&description='+f?.description)
-    instance.get('material-families/?limit=1000')
+    instance.get(`material-families/?limit=${ countFamily }`)
         .then((data) => {
             const families = data.data?.results;
             families.map((family) => {

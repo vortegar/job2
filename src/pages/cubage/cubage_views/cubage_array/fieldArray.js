@@ -82,27 +82,50 @@ export default function Fields({ control, register, errors, handleSubmit, submit
         if (rows[index]?.isNew == false) {
           return (
             <>
-
               <TableRow key={item.id}>
                 <TableCell sx={{ border: 1 }} colSpan="100%">
                   <Controller name="level" control={control}
                     render={({ field: { onChange, value }, formState }) => (
                       <Box sx={{ p: 1, m: 1, display: 'inline-flex', flexGrow: 1 }}>
-                        <TextField disabled={true} id="level" label="Piso" type="text" onChange={onChange} defaultValue={rows[index]?.level} {...register(`floor[${index}].level`)} InputLabelProps={{ shrink: true }} sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}></TextField>
+                        <TextField 
+                          disabled={true} 
+                          id="level" 
+                          label="Piso" 
+                          type="text" 
+                          onChange={onChange} 
+                          defaultValue={rows[index]?.level} {...register(`floor[${index}].level`)} 
+                          InputLabelProps={{ shrink: true }} 
+                          sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}
+                        ></TextField>
                       </Box>
                     )}
                   ></Controller>
                   <Controller name="apartment_groups" control={control}
                     render={({ field: { onChange, value }, formState }) => (
                       <Box sx={{ p: 1, m: 1, display: 'inline-flex', flexGrow: 1 }}>
-                        <TextField disabled={true} id="apartment_groups" label="Configuracion Departamentos" type="text" onChange={onChange} InputLabelProps={{ shrink: true }} sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}></TextField>
+                        <TextField 
+                          disabled={true} 
+                          id="apartment_groups" 
+                          label="Configuracion Departamentos" 
+                          type="text" 
+                          onChange={onChange} 
+                          InputLabelProps={{ shrink: true }} 
+                          sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}
+                        ></TextField>
                       </Box>
                     )}
                   ></Controller>
                   <Controller name="square_meters_surface" control={control}
                     render={({ field: { onChange, value }, formState }) => (
                       <Box sx={{ p: 1, m: 1, display: 'inline-flex', flexGrow: 1 }}>
-                        <TextField id="square_meters_surface" label="Metros Cuadrados" type="text" onChange={onChange} {...register(`floor[${index}].square_meters_surface`)} InputLabelProps={{ shrink: true }} sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}></TextField>
+                        <TextField 
+                          id="square_meters_surface" 
+                          label="Metros Cuadrados" 
+                          type="text" 
+                          onChange={onChange} {...register(`floor[${index}].square_meters_surface`)} 
+                          InputLabelProps={{ shrink: true }} 
+                          sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}
+                          ></TextField>
                       </Box>
                     )}
                   ></Controller>
@@ -115,22 +138,30 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                           <InputLabel disabled shrink={true}>Copiar Familias</InputLabel>
                           <Select disabled={true} onChange={onChange} value={value} autowidth='true'
                             sx={{ display: 'inline-flex', width: 200 }}
-                          >
-                            {generateSearchFloorOptions()}
+                          >{generateSearchFloorOptions()}
                           </Select>
                         </FormControl>
                       )}
                     /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <ButtonComponent disabled={true} onClick={handleSubmit((data) => { loadApartments(data, floorNumber), unlockFamily() })} color="success" variant="contained"> Agregar Piso </ButtonComponent>&nbsp;&nbsp;
-                  <ButtonComponent  onClick={handleSubmit((data) => { updateFloorData(data, floorNumber) })} color="secondary" variant="contained"> Editar tipo </ButtonComponent>
+                    <ButtonComponent 
+                      disabled={true} 
+                      onClick={handleSubmit((data) => { loadApartments(data, floorNumber), 
+                      unlockFamily() })} 
+                      color="success" 
+                      variant="contained"
+                    > Agregar Piso </ButtonComponent>&nbsp;&nbsp;
+                  <ButtonComponent  
+                    onClick={handleSubmit((data) => { updateFloorData(data, floorNumber) })} 
+                    color="secondary" 
+                    variant="contained"
+                  > Editar tipo </ButtonComponent>
                   </Box>
                 </TableCell>
               </TableRow>
+
               <TableRow style={{ background: 'rgb(24 144 255 / 20%)', "height": '35px' }}>
                 <TableCell sx={{ border: 1, height: 20 }}>
-
                   <h2 sx={{ height: 20 }}> Piso&nbsp;{rows[index]?.level}</h2>
-
                 </TableCell>
                 {copyFloor[floorNumber+1]?.apartment_groups?.map((i, indice) => {
                   const id = i.id;
@@ -138,7 +169,12 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                     <>
                       <TableCell sx={{ border: 1, borderRight: 0, width: 200 }} key={i.id}>
                         <input hidden placeholder="id" label="id"  {...register(`floor[${index}].apartment[${indice}].id`)} sx={{ "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-root": { height: 30, width: 80 }, }} defaultValue={i.id} />
-                        <TextField placeholder="depto" label="Depto." InputLabelProps={{ shrink: true, style: { color: '#000000', background: '#d1e7ff' }, root: { color: '#42f595' } }} {...register(`floor[${index}].apartment[${indice}].apartment_number`)} sx={{ "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-root": { height: 30, width: 80 }, "MuiInputLabel-root": { color: 'red' } }} defaultValue={i.apartment_number}></TextField>
+                        <TextField 
+                          placeholder="depto" 
+                          label="Depto." 
+                          InputLabelProps={{ shrink: true, style: { color: '#000000', background: '#d1e7ff' }, root: { color: '#42f595' } }} {...register(`floor[${index}].apartment[${indice}].apartment_number`)} 
+                          sx={{ "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-root": { height: 30, width: 80 }, "MuiInputLabel-root": { color: 'red' } }} defaultValue={i.apartment_number}
+                          ></TextField>
                       </TableCell>
                       <TableCell sx={{ border: 1, borderLeft: 0, width: 200 }}>
                         {/* <input disabled placeholder={i.id} {...register(`floor[${index}].apartment_cto_group[${indice}]`, { value: parseInt(i.id) })} value={id} defaultValue={id} />*/}
@@ -151,24 +187,19 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                 <TableCell sx={{ border: 1 }} >TOTAL</TableCell>
                 <TableCell colSpan='100%' sx={{ border: 1 }}>
                   <Stack direction="row" justifyContent="end">
-
                     {/*<ButtonComponent onClick={() => { remove(index), deleteFloor(floorNumber) }} color='error' tooltip='Eliminar Piso'><MinusCircleOutlined /></ButtonComponent>*/}
-
                     <ButtonComponent onClick={handleSubmit((data) => { deleteFloor(data, floorNumber) })} color='error' tooltip={`Eliminar Piso `}><MinusCircleOutlined /></ButtonComponent>
-
                   </Stack>
-
                   <input hidden label="id" placeholder="id" {...register(`floor[${index}].floorId`, { value: rows[index]?.cubication_section })} />
-
                 </TableCell>
               </TableRow>
+
               <FamiliesArray
                 floorIndex={index}
                 familyState={false}
                 {...{ control, register, errors, handleSubmit, submitFloor, floorNumber, setValue, putFloor, reset, deleteFamily, familyLock, setFamilyLock }}
               />
-              <TableRow>
-              </TableRow>
+              <TableRow></TableRow>
             </>
           );
           /*-----------------------------------------------------o-----------------------------------------------------*/
@@ -181,14 +212,31 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                   <Controller name="level" control={control}
                     render={({ field: { onChange, value }, formState }) => (
                       <Box sx={{ p: 1, m: 1, display: 'inline-flex', flexGrow: 1 }}>
-                        <TextField disabled={false} id="level" label="Piso" type="text" onChange={onChange} defaultValue={rows[index]?.level} {...register(`floor[${index}].level`)} InputLabelProps={{ shrink: true }} sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}></TextField>
+                        <TextField 
+                          disabled={false} 
+                          id="level" 
+                          label="Piso" 
+                          type="text" 
+                          onChange={onChange} 
+                          defaultValue={rows[index]?.level} {...register(`floor[${index}].level`)} 
+                          InputLabelProps={{ shrink: true }} 
+                          sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}
+                        ></TextField>
                       </Box>
                     )}
                   ></Controller>
                   <Controller name="apartment_groups" control={control}
                     render={({ field: { onChange, value }, formState }) => (
                       <Box sx={{ p: 1, m: 1, display: 'inline-flex', flexGrow: 1 }}>
-                        <TextField id="apartment_groups" label="Configuracion Departamentos" type="text" onChange={onChange} InputLabelProps={{ shrink: true }} sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}></TextField>
+                        <TextField 
+                          id="apartment_groups" 
+                          label="Configuracion Departamentos" 
+                          placeholder="Ejemplo: A"
+                          type="text" 
+                          onChange={onChange} 
+                          InputLabelProps={{ shrink: true }} 
+                          sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 50, borderRadius: '12px' }, "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}
+                        ></TextField>
                       </Box>
                     )}
                   ></Controller>
@@ -238,7 +286,12 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                       <TableCell sx={{ border: 1, borderLeft: 0, width: 200 }}>
                         {/* <input disabled placeholder={i.id} {...register(`floor[${index}].apartment_cto_group[${indice}]`, { value: parseInt(i.id) })} value={id} defaultValue={id} />*/}
                         {/*<input hidden disabled placeholder={i.apartment_number} />*/}
-                        <TextField placeholder="Tipo" label="Tipo" InputLabelProps={{ shrink: true, style: { color: '#000000', background: '#d1e7ff' } }} {...register(`floor[${index}].apartment[${indice}].apartment_type`)} sx={{ "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-root": { height: 30, width: 80 }, }} defaultValue={i.apartment_type} />
+                        <TextField 
+                          placeholder="Tipo" 
+                          label="Tipo" 
+                          InputLabelProps={{ shrink: true, style: { color: '#000000', background: '#d1e7ff' } }} {...register(`floor[${index}].apartment[${indice}].apartment_type`)} 
+                          sx={{ "& .MuiInputBase-input.Mui-disabled": { WebkitTextFillColor: "#000000" }, "& .MuiInputBase-root": { height: 30, width: 80 }, }} defaultValue={i.apartment_type} 
+                        />
                       </TableCell>
                     </>
                   )
@@ -249,7 +302,11 @@ export default function Fields({ control, register, errors, handleSubmit, submit
                     {/*<ButtonComponent onClick={() => { remove(index), deleteFloor(floorNumber) }} color='error' tooltip={`Eliminar Piso `}><MinusCircleOutlined /></ButtonComponent>
 
                     <ButtonComponent onClick={ handleSubmit((data) =>{deleteFloor(data, floorNumber), remove(index)} )}color='error' tooltip={`Eliminar Piso `}><MinusCircleOutlined /></ButtonComponent>*/}
-                    <ButtonComponent onClick={handleSubmit((data) => { deleteFloor(data, floorNumber) })} color='error' tooltip={`Eliminar piso`}><MinusCircleOutlined /></ButtonComponent>
+                    <ButtonComponent 
+                      onClick={handleSubmit((data) => { deleteFloor(data, floorNumber) })} 
+                      color='error' 
+                      tooltip={`Eliminar piso`}><MinusCircleOutlined />
+                    </ButtonComponent>
                   </Stack>
                 </TableCell>
               </TableRow>

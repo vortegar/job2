@@ -1,6 +1,6 @@
 // --------------------------- FAMILIES ARRAYS ---------------------------
 // REACT IMPORTS
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from 'react-redux';
 import { useFieldArray, Controller } from "react-hook-form";
 
@@ -33,13 +33,13 @@ export default function Fields({ control, register, defaultValues, errors, apart
         remove: apartmentRemove
     } = useFieldArray({ control, name: `floor[${floorIndex}].families.apartments` });
 
-    const [isNew, setIsNew] = React.useState();
+    const [isNew, setIsNew] = useState();
 
     //const familyLock = useSelector(store => store.cubageFormStates.familyLock);
 
     // FAMILY COMBOBOX INDEX FOR SETTING MATERIALS COMBOBOX
-    const [familyCB, setFamilyCB] = React.useState();
-    const [counter, setCounter] = React.useState(1);
+    const [familyCB, setFamilyCB] = useState();
+    const [counter, setCounter] = useState(1);
 
     // GETTING DATA FROM STORE
     const rows = useSelector(store => store.cubageFloor);
@@ -49,7 +49,7 @@ export default function Fields({ control, register, defaultValues, errors, apart
     const identificadorPiso = rows[floorNumber];
     const filterFamil = famil.filter(e => e.cubication_section == identificadorPiso?.cubication_section)
 
-    React.useEffect(() => {
+    useEffect(() => {
         reset({ test: [] })
         if (filterFamil) {
             if (rows[floorIndex]?.isNew == false) {
@@ -79,7 +79,7 @@ export default function Fields({ control, register, defaultValues, errors, apart
     };
 
     // GENERATE FAMILY ARRAY FIELDS FUNCTION
-    React.useEffect(() => {
+    useEffect(() => {
         filterFamil.map((i, index) => {
             if (filterFamil.length == 1 && i?.id != "") {
                 append({});
@@ -110,7 +110,12 @@ export default function Fields({ control, register, defaultValues, errors, apart
                                     render={({ field: { onChange, value } }) => (
                                         <FormControl  sx={{ display: 'inline-flex', flexGrow: 1, "& .MuiInputBase-root": { height: 30, borderRadius: '12px' }, "& .MuiInputBase-input": { fontFamily: 'Roboto', fontSize: 14, } }}>
                                             <InputLabel style={{ 'backgroundColor': '#f3f3f3' }}>Familia</InputLabel>
-                                            <Select  onChange={onChange} onBlur={e => handleMaterial(e.target.value, index)} value={value} autowidth='true' defaultValue={filterFamil[index]?.material_family?.id}
+                                            <Select  
+                                                onChange={onChange} 
+                                                onBlur={e => handleMaterial(e.target.value, index)} 
+                                                value={value} 
+                                                autowidth='true' 
+                                                defaultValue={filterFamil[index]?.material_family?.id}
                                                 sx={{ display: 'inline-flex', width: 200 }}
                                             >
                                                 {generateFamilyOptions()}

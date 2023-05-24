@@ -1,6 +1,6 @@
 // --------------------------- MATERIALS ARRAYS ---------------------------
 // REACT IMPORTS
-import React from 'react';
+// import React from 'react';
 import { useFieldArray, Controller } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -12,6 +12,7 @@ import { updateCopyMaterialGroups } from 'pages/cubage/cubage_slices/full_cubage
 import { updateMaterialGroupsRemove } from 'pages/cubage/cubage_slices/full_cubage_sections/cubage_full_material_groups_slice';
 import { MinusCircleOutlined, PlusCircleOutlined } from '@ant-design/icons';
 import { Stack } from '../../../../../node_modules/@mui/material/index';
+import { useState, useEffect } from 'react';
 
 const Materials = ({
   floorIndex,
@@ -34,25 +35,27 @@ const Materials = ({
   });
 
   // MATERIAL CODE
-  const [code, setCode] = React.useState([]);
-  const [validador, setValidador] = React.useState(false);
-  const [comboBoxId, setComboBoxId] = React.useState();
-  const [newTotal, setNewTotal] = React.useState();
-  const [materialIndex, setMaterialIndex] = React.useState();
-  const [isNew, setIsNew] = React.useState();
+  const [code, setCode] = useState([]);
+  const [isNew, setIsNew] = useState();
+  // const [newTotal, setNewTotal] = useState();
+  const [comboBoxId, setComboBoxId] = useState();
+  const [isLocked, setIsLocked] = useState(false);
+  // const [validador, setValidador] = useState(false);
+  // const [materialIndex, setMaterialIndex] = useState();
+  const [lockQuantity, setLockQuantity] = useState(true);
 
-  const [isLocked, setIsLocked] = React.useState(false);
-
-  const [lockQuantity, setLockQuantity] = React.useState(true);
   const dispatch = useDispatch();
+
   // GETTING DATA FROM STORE
   const materials = useSelector((store) => store.materials);
+
   const rows = useSelector((store) => store.cubageFloor);
   const famil = useSelector((store) => store.cubageGroups);
+
   const identificadorPiso = rows[floorNumber];
   const filterFamil = famil.filter((e) => e.cubication_section == identificadorPiso?.cubication_section);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (idFamilia == undefined) {
       setComboBoxId(familyCB);
     } else {
@@ -61,7 +64,7 @@ const Materials = ({
   });
 
   // CHANGE BUTTONS
-  React.useEffect(() => {
+  useEffect(() => {
     reset({ test: [] });
     if (filterFamil[familyIndex]) {
       if (rows[floorIndex]?.isNew == false) {
@@ -96,7 +99,7 @@ const Materials = ({
 
   const cubage = useSelector((store) => store.cubageGroups);
   const data = useSelector((store) => store.cubageGroups);
-//console.log('data', data)
+
   const cargar2segundos = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -106,7 +109,7 @@ const Materials = ({
   };
 
   // GENERATE MATERIALS ARRAY FIELDS FUNCTION
-  React.useEffect(() => {
+  useEffect(() => {
     reset({ test: [] });
     filterFamil[familyIndex]?.materias.map((i, index) => {
       append({});
@@ -123,7 +126,6 @@ const Materials = ({
   
   const isRemove = (index) => {
     let arr = filterFamil[0]?.id
-    //console.log('arr', filterFamil[0]?.materias[index]?.id)
     dispatch(updateCopyMaterialGroups({isRemove: true, id: arr}));
     dispatch(updateMaterialGroupsRemove({id: arr}))
     remove(index)
@@ -152,7 +154,7 @@ const Materials = ({
                     <Select
                       onChange={onChange}
                       onBlur={(e) => {
-                        handelMaterial(e.target.value), unlockQuantity();
+                      handelMaterial(e.target.value), unlockQuantity();
                       }}
                       value={value}
                       autowidth="true"
@@ -253,8 +255,7 @@ const Materials = ({
                       onClick={handleSubmit((data) => {
                         submitFloor(data, floorNumber, floorIndex, familyIndex), lockButton();
                       })}
-                    >
-                      Finalizar Familia
+                    > Finalizar Familia
                     </ButtonComponent>
                   ) : (
                     <ButtonComponent

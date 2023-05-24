@@ -3,8 +3,6 @@ import { lazy, useCallback } from 'react';
 
 import Loadable from 'components/Loadable';
 
-
-
 // REACT IMPORTS
 import React, { useEffect, useState } from 'react';
 import { IconButton, Collapse, Alert, Typography } from '@mui/material';
@@ -17,6 +15,7 @@ import { EditOutlined,
         InfoCircleOutlined, 
         DownloadOutlined } from '@ant-design/icons';
 import { useDispatch, useSelector } from 'react-redux';
+
 //! Esta linea no se usa
 // import {BrowserRouter as Router, Link } from "react-router-dom";
 
@@ -65,6 +64,7 @@ const SamplePage = () => {
   
   // FILTER IMPORTS
   const filters = useSelector(store => store.materialsFilters);
+//   console.log(filters)
   
   // IMPORTING INITIAL STATE FROM THE STORE
   const rows = useSelector(store => store.materials);
@@ -75,18 +75,25 @@ const SamplePage = () => {
   const [count, setCount] = useState(0);
   const [limitPage, setLimitPage] = useState(200);
   const [offsetPage, setOffsetPage] = useState(0);
+  const [countFamily, setCountFamily] = useState(0);
+  const [showBtnLoad, setShowBtnLoad] = useState(true);
   const [rowsLoading, setRowsLoading] = useState(false);  
+  const [countSubfamily, setCountSubfamily] = useState(0);
   const [hiddenBtnLoad, setHiddenBtnLoad] = useState(false);  
-  
+
+
 // IMPORT DATA FROM API
   useEffect(() => {
-    getMaterialData( dispatch, deleteId, filters, setRowsLoading, offsetPage, limitPage );
-    // console.log('getMaterial')
-    // setLoadingData( true )
-    // getFamilyData(dispatch);
-    // getSubFamilyData(dispatch, deleteId, filters);
-}, [count]);
+    getMaterialData( dispatch, deleteId, filters, setRowsLoading, limitPage, setCountSubfamily, countSubfamily, setCountFamily, countFamily );
+  }, [count]);
 
+ useEffect(() => {
+    getSubFamilyData( dispatch, deleteId, filters, countSubfamily );
+ }, [count]);
+
+ useEffect(() => {
+    getFamilyData( dispatch, deleteId, countFamily );
+ }, [count]);
 
 
   const increment = async() => {
@@ -102,8 +109,9 @@ const SamplePage = () => {
 
     setOffsetPage(offsetPage + 100);
     setLimitPage(limitPage + 100)
-    setCount( count  + 1 )
+    setCount( count  + 1 );
   };
+
 
 
  // DATAGRID COLUMNS CONFIGURATION
@@ -191,18 +199,27 @@ const SamplePage = () => {
 
     const closeFilter = () => {
         dispatch(setFilterView(false));
-        setTimeout(() => {
-            getMaterialData(dispatch, deleteId, filters);
-        }, 1000)
+        setCount( count  + 1 );
+        setShowBtnLoad(false)
+        //! Se elimina este codigo
+        // setTimeout(() => {
+    // getMaterialData( dispatch, deleteId, filters, setRowsLoading, limitPage, setCountSubfamily, countSubfamily, setCountFamily, countFamily );
+            // console.log(filters)
+            // getMaterialData(dispatch, deleteId, filters);
+        // }, 1000)
     }
 
     // DELETE PRODUCT FROM STORE FUNCTION
     const handleDelete = (id) => {
+        console.log(id)
+        
         deleteData(id);
         setDeleteId(id)
-        setTimeout(() => {
-            getMaterialData(dispatch, deleteId, filters);
-        }, 1000)
+        setCount( count  + 1 );
+
+        // setTimeout(() => {
+        //     getMaterialData(dispatch, deleteId, filters);
+        // }, 1000)
         
     };
 
@@ -217,21 +234,23 @@ const SamplePage = () => {
     }
 
     const handleClearFilter = () => {
+        setShowBtnLoad(true)
+        setCount( count  + 1 );
+
         dispatch(restoreMaterial());
         dispatch(setFamilyFilter(""));
         dispatch(setSubFamilyFilter(""));
-        setTimeout(() => {
-            getMaterialData(dispatch, deleteId, filters);
-        }, 1000)
-        closeFilter();
     }
-
 
     return (
         <>
             {open ? <FormDialog abrir={open} closeModal={closeModal} id={id} product={rows.filter(product => product.id === id)} /> : ''}
             {openView ? <ViewProduct abrir={openView} closeModal={closeView} id={id} product={rows.filter(product => product.id === id)} /> : ''}
-            <MaterialsFilters abrir={filterView} closeFilter={closeFilter} />
+            <MaterialsFilters 
+                abrir={filterView} 
+                closeFilter={closeFilter} 
+                increment={increment} 
+                />
             <MaterialsUpload open={uploadView} closeUpload={closeUpload}/>
             <Collapse in={openAlert} timeout={500}>
                 <Alert
@@ -246,7 +265,7 @@ const SamplePage = () => {
                                 setOpenAlert(false);
                             }}
                         >
-                            <CloseCircleOutlined />
+                 y           <CloseCircleOutlined />
                         </IconButton>
                     }>
                     Eliminado correctamente
@@ -294,8 +313,9 @@ const SamplePage = () => {
                     (hiddenBtnLoad) 
                         ? <Alert severity="success">Todos los materiales han sido cargados</Alert>
                         :
-                        <>
-                            <Typography variant="caption" style={{ margin: '10px auto' }} fontWeight="bold">
+                        <> { (showBtnLoad) && (
+                                <>
+                                <Typography variant="caption" style={{ margin: '10px auto' }} fontWeight="bold">
                                 {limitPage} <Typography variant="caption" >materiales cargados</Typography> 
                             </Typography>
                             <ButtonComponent 
@@ -305,6 +325,10 @@ const SamplePage = () => {
                                 color="success">
                                     <DownloadOutlined  />&nbsp;&nbsp;Cargar materiales 
                             </ButtonComponent> 
+                                </>
+
+                        )}
+                            
                         </>  
                                          
                 }

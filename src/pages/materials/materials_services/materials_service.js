@@ -3,10 +3,21 @@ import instance from 'services/axios_config';
 import { addMaterial, deleteMaterial } from '../materials_slices/materials_slice';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { matchRoutes } from '../../../../node_modules/react-router-dom/dist/index';
 
 
 // GET DATA FROM API AND SEND TO THE STORE
-export const getMaterialData = ( dispatch, deleteId, filters, setRowsLoading, offsetPage, limitPage  ) => {
+export const getMaterialData = (
+      dispatch, 
+      deleteId, 
+      filters, 
+      setRowsLoading,
+      limitPage, 
+      setCountSubfamily, 
+      countSubfamily,
+      setCountFamily,
+      countFamily
+       ) => {
     console.log("cargando datos");
     if(!filters) {
         return filters = {
@@ -20,7 +31,22 @@ export const getMaterialData = ( dispatch, deleteId, filters, setRowsLoading, of
         instance.get(`materials/?offset=${ 0 }&limit=${ limitPage }&material_family=${filters.familyFilter}&material_subfamily=${filters.subFamilyFilter}`)
             .then((data) => {
                 const materials = data.data?.results;
-                // console.log(materials)
+                const length = Object.entries(materials).length;
+                const family = {};
+                const subfamily = {};
+                for (let i = 0; i < length; i++) {
+
+                    const nameFamily = materials[i].material_family_data.name;
+                    const nameSubfamily = materials[i].material_subfamily_data.name;
+                    if( !subfamily[nameSubfamily] ){
+                        subfamily[nameSubfamily] = nameSubfamily;
+                        setCountSubfamily( countSubfamily += 1 );
+                    }
+                    if( !family[nameFamily] ){
+                        family[nameFamily] = nameFamily;
+                        setCountFamily( countFamily += 1 );
+                    }
+                }
                 materials.map((material) => {
                     const { id, name, description, code, price, measure_unit, material_family_data, material_family, material_subfamily_data, material_subfamily } = material;
                     dispatch(addMaterial({

@@ -5,7 +5,7 @@ import { Controller, useForm } from 'react-hook-form';
 
 // AXIOS METHODS IMPORTS
 import { getFamilyData } from 'pages/families/families_services/families_service';
-import { getSubFamilyData } from 'pages/sub_families/subFamilies_services/subFamilies_services';
+// import { getSubFamilyData } from 'pages/sub_families/subFamilies_services/subFamilies_services';
 import { getMaterialData, postData, updateData } from '../materials_services/materials_service';
 
 
@@ -17,24 +17,25 @@ import ButtonComponent from 'components/main_components/button_component/index';
 import { setFamilyFilter, setSubFamilyFilter } from '../materials_slices/materials_filter';
 import { restoreMaterial } from '../materials_slices/materials_slice';
 
-const MaterialsFilters = (props) => {
+const MaterialsFilters = ({ abrir, closeFilter,  increment }) => {
+    
     const dispatch = useDispatch();
-
+    const filters = useSelector(store => store.MaterialsFilters);
+    //! Este codigo no se usa
     // IMPORT DATA FROM API
-    useEffect(() => {
-        //getFamilyData(dispatch);
-        //getSubFamilyData(dispatch);
-    }, [])
-
-    // VATIABLE ASSIGNMENT OF PROPS RECEIVED
-    const { abrir, closeFilter } = props;
+    // useEffect(() => {
+        // getFamilyData(dispatch);
+        // getSubFamilyData(dispatch);
+        // console.log('hola')
+    // }, [])
+//  useEffect(() => {
 
     // REACT-HOOK-FORM USES
     const { handleSubmit, formState: { errors }, control } = useForm();
 
-
     // DATA ASSIGN TO COMBOBOX
-    const families = useSelector(store => store.families)
+    const families = useSelector(store => store.families);
+    const subFamilies = useSelector(store => store.subFamilies);
 
     const generateFamilyOptions = () => {
         return families.map((family) => {
@@ -46,7 +47,6 @@ const MaterialsFilters = (props) => {
         });
     }
 
-    const subFamilies = useSelector(store => store.subFamilies)
     const generateSubFamilyOptions = () => {
         return subFamilies.map((subFamily) => {
             return (
@@ -59,10 +59,9 @@ const MaterialsFilters = (props) => {
 
     const handleClose = () => {
         closeFilter();
-        getMaterialData(dispatch);
+        // getMaterialData(dispatch);
     };
 
-    const filters = useSelector(store => store.MaterialsFilters)
 
     const handleFilter = (data) => {
         const deleteId= "";
@@ -70,13 +69,16 @@ const MaterialsFilters = (props) => {
         dispatch(setSubFamilyFilter(data.material_subfamily));
         dispatch(restoreMaterial());
         setTimeout(() => {
-            getMaterialData(dispatch, deleteId, filters);
+            console.log('cargado')
+            // getMaterialData(dispatch, deleteId, filters);
+            // getMaterialData( dispatch, deleteId, filters, setRowsLoading, limitPage, setCountSubfamily, countSubfamily, setCountFamily, countFamily );
         }, 1000)
         
         closeFilter();
     };
 
-    return (<div>
+    return (
+    <div>
         <Dialog open={abrir} onClose={handleClose} sx={{ "& .MuiPaper-root": { borderRadius: '14px', width: 700 } }}>
             <DialogTitle sx={{ fontSize: 25, fontFamily: 'Roboto', fontWeight: 'bold' }}>Filtros de busqueda</DialogTitle>
             <form sx={{ m: 1, minWidth: 120 }} onSubmit={handleSubmit((data) => { handleFilter(data) })}>
@@ -137,7 +139,12 @@ const MaterialsFilters = (props) => {
                     </Box>
                 </DialogContent>
                 <DialogActions>
-                    <ButtonComponent type="Submit" variant="contained" color="success" >Filtrar</ButtonComponent>
+                    <ButtonComponent 
+                        type="Submit" 
+                        // onClick={increment} 
+                        variant="contained" 
+                        color="success" 
+                    >Filtrar</ButtonComponent>
                     <ButtonComponent onClick={handleClose} variant="contained" color="error">Cancelar</ButtonComponent>
                 </DialogActions>
             </form>

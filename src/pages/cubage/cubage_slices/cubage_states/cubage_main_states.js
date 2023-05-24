@@ -13,6 +13,7 @@ const cubageMainStates = createSlice ({
         downloadView: false,
         filterView: false,
         uploadView: false,
+        message: false,
     },
     reducers: {
         setIsNew: (state, action) => {
@@ -42,9 +43,25 @@ const cubageMainStates = createSlice ({
         setUploadView: (state, action) => {
             state.uploadView = action.payload;
         },
+        setUploadView: (state, action) => {
+            state.uploadView = action.payload;
+        },
+        setMessage: (state, action) => {
+            state.message = action.payload;
+        }
     }
 })
 
+export const { setIsNew, 
+               setOpen, 
+               setOpenView, 
+               setOpenAlert, 
+               setId, 
+               setDisabledButton, 
+               setDownloadView, 
+               setFilterView, 
+               setUploadView,
+               setMessage
+            } = cubageMainStates.actions;
 
-export const { setIsNew, setOpen, setOpenView, setOpenAlert, setId, setDisabledButton, setDownloadView, setFilterView, setUploadView } = cubageMainStates.actions;
 export default cubageMainStates.reducer;

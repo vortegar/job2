@@ -13,6 +13,7 @@ const isNewSlice = createSlice({
         id: null,
         disabledButton: true,
         filterView: false,
+        message: false,
         existing: {
             id: 'dfasd',
             company_id: '',
@@ -58,9 +59,13 @@ const isNewSlice = createSlice({
         },
         setIsLoading: (state, action) => {
             state.isLoading = action.payload
+        },    
+        setMessage: (state, action) => {
+            state.message = action.payload
         }    
+
     }
 })
+export const { setIsNew, setOpen, setOpenView, setOpenAlert, setId, setExisting, setDisabledButton, setFilterView, setMessage } = isNewSlice.actions;
 
-export const { setIsNew, setOpen, setOpenView, setOpenAlert, setId, setExisting, setDisabledButton, setFilterView } = isNewSlice.actions;
 export default isNewSlice.reducer;

@@ -24,7 +24,7 @@ import { getSubFamilyData } from 'pages/sub_families/subFamilies_services/subFam
 import { getMaterialData, postData, updateData } from '../materials_services/materials_service';
 
 
-const FormDialog = (props) => {
+const FormDialog = ({ abrir, closeModal, id, product }) => {
 
   const dispatch = useDispatch();
 
@@ -79,7 +79,7 @@ const FormDialog = (props) => {
 
 
   // VARIABLE ASSIGNMENT OF PROPS RECEIVED
-  const { abrir, closeModal, id, product } = props;
+  // const { abrir, closeModal, id, product } = props;
 
 
   // REACT-HOOK-FORMS USES
